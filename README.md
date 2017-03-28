@@ -1,4 +1,4 @@
-# Roots Example Project
+# Frieda Garcia Park Wordpress Development
 
 This repository is an example of how to integrate and use the following projects together:
 
@@ -24,36 +24,13 @@ At a minimum you need to have:
 * [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) >= 3.8.10
 * [Bower](https://github.com/bower/bower/blob/master/README.md#install) >= 1.3.12
 
-
-## Local development setup
-
-1. **Clone this repository** into a working directory (e.g., `~/Sites`)
-  ```shell
-  $ git clone https://github.com/Resilient-Labs/frieda-garcia-park.git
-  ```
-
-2. **Install external Ansible roles/packages**
-  ```shell
-  # @ frieda-garcia-park.com/trellis (you must cd to this path)
-  $ ansible-galaxy install -r requirements.yml
-  ```
-
-3. **Install theme components**
-  ```shell
-  # @ frieda-garcia-park.com/site/web/app/themes/sage (you must cd to this path)
-  $ npm install
-  $ bower install
-  $ gulp
-  ```
-
-4. **Fire up the server** (be patient, but watch the console––it may prompt for your system password)
+## Local development Workflow
+1. ** Fire up the server** (be patient, but watch the console––it may prompt for your system password)
   ```shell
   # @ frieda-garcia-park.com/trellis (you must cd to this path)
   $ vagrant up
   ```
-  _Note: to shut down the server:_ `vagrant halt`
-
-5. **Test the install** at [frieda-garcia-park.dev](http://frieda-garcia-park.dev/)
+2. ** In the browser, test the install** at [frieda-garcia-park.dev](http://frieda-garcia-park.dev/)
 
 ## Remote server setup (staging/production)
 
