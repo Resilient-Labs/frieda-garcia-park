@@ -96,7 +96,7 @@ article {
   float: right;
   margin-left: 60px; }
 
-@media (min-width: 414px) and (max-width: 768px) {
+@media (min-width: 436px) and (max-width: 768px) {
   * {
     padding: 0;
     margin: 0; }
@@ -105,6 +105,7 @@ article {
     padding: 0; }
 
   aside {
+    position: relative;
     width: 100%;
     background: transparent;
     box-shadow: none;
@@ -123,12 +124,22 @@ article {
       padding: 10px; }
 
   .reverse aside {
-    display: none; }
+    position: relative;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    top: 0; }
   .reverse article {
     float: none;
     width: 90%;
     margin: 0 auto; }
     .reverse article h2 {
       padding: 10px; } }
+@media screen and (min-width: 413px) {
+  section {
+    width: 90%; }
+
+  aside {
+    display: none; } }
 
 /*# sourceMappingURL=output.css.map */

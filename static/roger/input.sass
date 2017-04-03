@@ -115,16 +115,15 @@ article
   aside
     float: right
     margin-left: 60px
-
-// @media (min-width:768px) and (max-width:1024px)
-
-@media (min-width:414px) and (max-width:768px)
+// --- Media Queries
+@media (min-width:436px) and (max-width:768px)
   *
     padding: 0
     margin: 0
   section
     padding: 0
   aside
+    position: relative
     width: 100%
     background: transparent
     box-shadow: none
@@ -142,10 +141,20 @@ article
       padding: 10px
   .reverse
     aside
-      display: none
+      position: relative
+      width: 100%
+      background: transparent
+      box-shadow: none
+      top: 0
     article
       float: none
       width: 90%
       margin: 0 auto
       h2
         padding: 10px
+
+@media screen and (min-width:413px)
+  section
+    width: 90%
+  aside
+    display: none
