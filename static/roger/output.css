@@ -54,7 +54,7 @@ section {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 75px;
-  padding: 0 10%;
+  padding: 0 45px;
   border: 1px solid #80caa5; }
 
 aside {
@@ -62,7 +62,6 @@ aside {
   top: -76px;
   float: left;
   width: 280px;
-  margin-right: 10%;
   background: #f7a5aa;
   -webkit-box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.6);
@@ -74,21 +73,62 @@ aside {
     font-family: "Roboto Slab Regular", sans-serif;
     font-size: 1.5rem;
     margin: 2rem;
-    line-height: 1.1em;
+    line-height: 1.3em;
     text-transform: none; }
   aside span {
     display: block;
+    margin-bottom: 0.5em;
     font-size: 3em;
-    margin-bottom: 0.5em; }
+    font-weight: normal; }
 
 article {
-  float: left;
+  float: right;
   width: 50%;
   margin: 1.5rem 0; }
+  article ul {
+    margin-left: 1rem; }
 
 .reverse article,
 .reverse aside {
   position: relative;
   float: left; }
+.reverse aside {
+  float: right;
+  margin-left: 60px; }
+
+@media (min-width: 414px) and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0; }
+
+  section {
+    padding: 0; }
+
+  aside {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    top: 0; }
+    aside img {
+      margin-bottom: 15px; }
+    aside h3 {
+      margin-top: 10px;
+      display: none; }
+
+  article {
+    float: none;
+    width: 90%;
+    margin: 0 auto; }
+    article h2 {
+      padding: 10px; }
+
+  .reverse aside {
+    display: none; }
+  .reverse article {
+    float: none;
+    width: 90%;
+    margin: 0 auto; }
+    .reverse article h2 {
+      padding: 10px; } }
 
 /*# sourceMappingURL=output.css.map */
