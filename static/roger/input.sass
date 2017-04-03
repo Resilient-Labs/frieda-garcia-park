@@ -10,6 +10,14 @@ $f-size: 1rem
 $h-size: 2.5rem
 $a-size: 1.5rem
 
+@font-face
+  font-family: "Roboto Slab Regular"
+  src: url('font/Roboto_Slab/RobotoSlab-Regular.ttf')
+
+@font-face
+  font-family: "Roboto Medium"
+  src: url('font/Roboto_Slab/RobotoSlab-Light.ttf')
+
 .cf:before,
 .cf:after
   content: ""
@@ -24,7 +32,6 @@ $a-size: 1.5rem
   -moz-box-sizing: border-box
   -webkit-box-sizing: border-box
   box-sizing: border-box
-  text-transform: capitalize
 
 html
   font-size: 12px
@@ -35,9 +42,10 @@ body
   font-size: $f-size
 
 h1,h2,h3,h4,h5,h6
+  margin: $f-size * 4 0 $f-size * 1.5 0
   font-family: $rob-prime
   font-size: $h-size
-  margin: $f-size * 4 0 $f-size * 1.5 0
+  text-transform: capitalize
 
 a:link,
 a:visited,
@@ -49,6 +57,7 @@ a:hover
   color: $pink
 
 p
+  font-family: $rob-sec
   margin-bottom: $f-size
 
 section:first-of-type
@@ -75,22 +84,23 @@ aside
   color: $white
   img
     width: 100%
-  p
+  h3
+    font-family: $rob-prime
     font-size: $a-size
     margin: $f-size * 2
     line-height: 1.1em
+    text-transform: none
   span
     display: block
-    font-size: 2.2em
+    font-size: 3em
     margin-bottom: .5em
 
 article
-  float: right
+  float: left
   width: 50%
   margin: $f-size * 1.5 0
   ul
     @extend p
-    margin-left: 1rem
 
 .reverse
   article,
@@ -98,4 +108,3 @@ article
     position: relative
     float: left
   aside
-    margin-left: 11%
