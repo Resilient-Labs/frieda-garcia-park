@@ -1,0 +1,138 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.imgWrap{
+  margin-left: 5px;
+  width: 25%;
+  height: 230px;
+  float: left;
+}
+.picture{
+  margin-left: 90px;
+  width: 100%;
+  height: inherit;
+  border: solid pink 1px;
+  text-align: center;
+}
+.topImg{
+   width: 100%;
+   height: 230px;
+   margin-left: -20px;
+   margin-top: -10px;
+ }
+
+.top-row{
+  width: 75%;
+  float: left;
+  margin-bottom: 40px;
+}
+
+.pic-container{
+  width: 25%;
+  height: 217px;
+  float: left;
+}
+
+.blurb-container{
+  float: left;
+  width: 65%;
+  float: right;
+}
+
+.blurb{
+  width: 100%;
+  float: right;
+}
+
+.social-container{
+  width: 23%;
+  float: right;
+  clear: both;
+  margin-top: -1093px;
+  margin-left: 15px;
+}
+
+.social-title{
+  text-align: center;
+}
+
+.social-picture{
+  width: 95%;
+  height: 300px;
+  margin-left: 8px;
+  background-image: url(../img/ffgp_kids.jpg);
+  background-size: cover;
+}
+
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Tablet Landscape
+------------------------------------*/
+
+/*-----------------------------------
+## Tablet Portrait
+------------------------------------*/
+@media (min-width: 960px) and (orientation: portrait) {
+
+  .top-row {
+    width: 100%;
+  }
+
+  .social-container{
+    display: none;
+  }
+
+  .social-title{
+    display: none;
+  }
+
+  .social-picture{
+    display: none;
+  }
+}
+}
+/*-----------------------------------
+## Mobile Landscape
+------------------------------------*/
+@media (min-width: 640px) and (orientation: landscape) {
+  .top-row {
+    width: 100%;
+  }
+
+  .social-container{
+    display: none;
+  }
+
+  .social-title{
+    display: none;
+  }
+
+  .social-picture{
+    display: none;
+  }
+}
+/*-----------------------------------
+## Mobile Portrait
+------------------------------------*/
+@media (min-width: 640px) and (orientation: portrait) {
+  .top-row {
+    width: 100%;
+  }
+
+  .social-container{
+    display: none;
+  }
+
+  .social-title{
+    display: none;
+  }
+
+  .social-picture{
+    display: none;
+  }
+}
