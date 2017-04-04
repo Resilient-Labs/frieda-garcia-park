@@ -93,10 +93,9 @@ article {
   position: relative;
   float: left; }
 .reverse aside {
-  float: right;
-  margin-left: 60px; }
+  float: right; }
 
-@media (min-width: 436px) and (max-width: 768px) {
+@media (max-width: 768px) {
   * {
     padding: 0;
     margin: 0; }
@@ -135,7 +134,7 @@ article {
     margin: 0 auto; }
     .reverse article h2 {
       padding: 10px; } }
-@media screen and (min-width: 413px) {
+@media only screen and (min-width: 435px) {
   section {
     width: 90%; }
 
