@@ -1,0 +1,107 @@
+@media (max-width: 640px){
+  nav{
+    display: none;
+  }
+  figure{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-right: 80px;
+  }
+  section .mainImg p{
+    width: 100%;
+    text-align: center;
+  }
+  article figure{
+    border: 3px solid black;
+    width: 100%;
+    height: auto;
+  }
+ .imgCont{
+   margin: 0 auto;
+   width: 100%;
+   overflow: hidden;
+   padding: 23px 0px 0px 20px;
+  }
+  article figure section{
+    width: 100%;
+    margin: 0px;
+  }
+  .firstImg{
+    width: 100%;
+    height: 330px;
+  }
+  article .one{
+    width: 100%;
+    margin-top: -160px;
+  }
+  article .one h2{
+    margin-top: 100px;
+  }
+  .oneP{
+    width: 100%;
+  }
+  article .two{
+    border: 1px solid black;
+    width: 100%;
+    padding-left: 40px;
+  }
+  article .two h2{
+    margin-top: 100px;
+    margin-left: 0px;
+  }
+  .twoP{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .twoLink{
+    margin-left: 0px;
+  }
+  .secondImgBin{
+    width: 100%;
+    margin: 0px;
+  }
+  .secondImg{
+    width: 100%;
+    margin: 0px;
+  }
+  article .three{
+    width: 100%;
+  }
+  .threeImg{
+    margin: 0px;
+  }
+  footer{
+    clear: both;
+}
+.footerTitle{
+  border: 1px solid red;
+  font-size: 13rem;
+  padding-left: 38px;
+}
+.footerP{
+  margin: 0px;
+  padding-left: 38px;
+  font-size: 13rem;
+  width: 100%;
+}
+pre{
+  font-size: 11rem;
+  margin-left: 0px;
+  width: 100%;
+}
+.footerNavList a{
+  font-size: 13rem;
+  padding: 0px;
+}
+.footerWrap .hostEvent{
+  border: 1px solid black;
+}
+.footerWrap .hostEvent + section{
+  border: 1px solid black;
+}
+.footTitleCont{
+  border: 1px solid black;
+}
+
+}
