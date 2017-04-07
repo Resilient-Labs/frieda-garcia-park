@@ -1,0 +1,159 @@
+$sea-green: rgba(128,202,165,1)
+$white: rgba(255,255,255,1)
+$dark-grey: rgba(51,51,51,1)
+$baby-blue: rgba(170,223,241,1)
+$gold: rgba(252,236,152,1)
+$pink: rgba(247,165,170,1)
+$rob-prime: "Roboto Slab Regular", sans-serif
+$rob-sec: "Roboto Medium", monospace
+$f-size: 1rem
+$h-size: 2.5rem
+$a-size: 1.5rem
+
+// --- Fonts
+
+@font-face
+  font-family: "Roboto Slab Regular"
+  src: url('font/Roboto_Slab/RobotoSlab-Regular.ttf')
+
+@font-face
+  font-family: "Roboto Medium"
+  src: url('font/Roboto_Slab/RobotoSlab-Light.ttf')
+
+// --- Style
+
+.cf:before,
+.cf:after
+  content: ""
+  display: table
+
+.cf:after
+  clear: both
+
+*
+  margin: 0
+  padding: 0
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+html
+  font-size: 12px
+  line-height: 1.1rem
+
+body
+  margin: 0 auto
+  font-size: $f-size
+
+h1,h2,h3,h4,h5,h6
+  margin: $f-size * 4 0 $f-size * 1.5 0
+  font-family: $rob-prime
+  font-size: $h-size
+  text-transform: capitalize
+
+a:link,
+a:visited,
+a:active
+  text-decoration: none
+  color: inherit
+
+a:hover
+  color: $pink
+
+p
+  font-family: $rob-sec
+  margin-bottom: $f-size
+
+section:first-of-type
+  margin-top: 75px * 1.7
+
+section
+  position: relative
+  width: 90%
+  margin: 0 auto
+  margin-bottom: 75px
+  padding: 0 45px
+  border: 1px solid $sea-green
+
+aside
+  position: relative
+  top: -76px
+  float: left
+  width: 280px
+  background: $pink
+  -webkit-box-shadow: 4px 7px 12px rgba(0,0,0,0.6)
+  -moz-box-shadow: 4px 7px 12px rgba(0,0,0,0.6)
+  box-shadow: 4px 7px 12px rgba(0,0,0,0.6)
+  color: $white
+  img
+    width: 100%
+  h3
+    font-family: $rob-prime
+    font-size: $a-size
+    margin: $f-size * 2
+    line-height: 1.3em
+    text-transform: none
+  span
+    display: block
+    margin-bottom: .5em
+    font-size: 3em
+    font-weight: normal
+
+article
+  float: right
+  width: 50%
+  margin: $f-size * 1.5 0
+  ul
+    @extend p
+    margin-left: 1rem
+
+.reverse
+  article,
+  aside
+    position: relative
+    float: left
+  aside
+    float: right
+// --- Media Queries
+@media (max-width:768px)
+  *
+    padding: 0
+    margin: 0
+  section
+    padding: 0
+  aside
+    position: relative
+    width: 100%
+    background: transparent
+    box-shadow: none
+    top: 0
+    img
+      margin-bottom: 15px
+    h3
+      margin-top: 10px
+      display: none
+  article
+    float: none
+    width: 90%
+    margin: 0 auto
+    h2
+      padding: 10px
+  .reverse
+    aside
+      position: relative
+      width: 100%
+      background: transparent
+      box-shadow: none
+      top: 0
+    article
+      float: none
+      width: 90%
+      margin: 0 auto
+      h2
+        padding: 10px
+
+@media only screen and (min-width:435px)
+  section
+    width: 90%
+  aside
+    display: none
