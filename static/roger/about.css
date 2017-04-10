@@ -112,15 +112,15 @@ section:nth-of-type(2n) aside {
     width: 90%;
     margin: 0 auto; }
   section:nth-of-type(2n) article h2 {
-    padding: 10px; } }
+    padding: 10px; }
   section:nth-of-type(2n) aside {
     position: relative;
     width: 100%;
     background: transparent;
     box-shadow: none;
     top: 0; }
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   article {
-    width: 100%; } }
+    width: 100%; } } */
 
 /*# sourceMappingURL=about.css.map */
