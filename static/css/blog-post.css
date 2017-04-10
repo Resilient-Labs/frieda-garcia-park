@@ -1,0 +1,99 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.ad{
+  width: 25%;
+  float: right;
+  text-align: center;
+}
+
+.blog-post-row {
+position: relative;
+width: 75%;
+margin-bottom: 30px;
+}
+
+.blog-post-row .media {
+display: inline-block;
+position: relative;
+width: 25%;
+}
+
+.blog-post-row .media .img-wrap {
+border: 1px solid pink;
+height: 100%;
+position: absolute;
+right: -10px;
+top: 10px;
+width: 100%;
+z-index: -1;
+}
+
+.blog-post-row .media img {
+height: auto;
+width: 100%;
+}
+
+.blog-post-row .content {
+display: inline-block;
+padding: 15px;
+}
+
+.content{
+  width: 75%;
+  float: right;
+}
+
+
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+  .ad {
+    display: none;
+  }
+
+  .blog-post-row{
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  .ad {
+    display: none;
+  }
+
+  .blog-post-row {
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+
+  .thumbnail  {
+    display: none;
+  }
+
+  .img-wrap {
+    display: none;
+  }
+
+  .media {
+    display: none;
+  }
+}
