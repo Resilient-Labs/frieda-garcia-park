@@ -1,0 +1,235 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 1px;
+}
+/*wrapper*/
+  .wrapper{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+  }
+  /*MAIN IMAGE*/
+  .mainImg{
+    width: 100%;
+    height: 520px;
+    padding: 0;
+    margin: 0 auto;
+    background: url(../images/kids.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+  .mainTitle{
+      width: 46%;
+      height: auto;
+      display: block;
+      font-size: 45rem;
+      color: white;
+      line-height: 28px;
+      position: relative;
+      margin: -100px 0px 0px 300px;
+      text-align: center;
+    }
+    .cover{
+      width: 100%;
+      height: 520px;
+      background: black;
+      opacity: 0.3;
+      position: relative;
+    }
+
+  .secondImgBin{
+    border: 1px solid rgba(170,223,241,1);
+    width: 84%;
+    height: 340px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-right: 100px;
+  }
+  .secondImg{
+    width: 100%;
+    height: 340px;
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  /*MIDDLE*/
+  .middle{
+    font-size: 20rem;
+    height: 890px;
+    width: 100%;
+    padding-top: 70px;
+}
+.middle section{
+  border: 1px solid rgba(128,202,165,1);
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+  padding: 60px 0px 0px 90px;
+}
+.middle section p{
+  display: block;
+  width: 95%;
+  font-size: 16rem;
+}
+.middleLink{
+  background: rgba(247,165,170,1);
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 20%;
+  font-size: 17rem;
+  height: 40px;
+  text-align: center;
+  margin-top: 60px;
+}
+  /*FOOTER*/
+  footer{
+    background: rgba(128,202,165,1);
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 13rem;
+    color: white;
+  }
+  .footerWrap{
+    width: 100%;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .footerWrap section{
+    width: 25%;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+  }
+  .footerWrap .hostEvent{
+    width: 50%;
+  }
+  .copyRight{
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .copyRight small{
+    width: 75%;
+    height: 50px;
+    margin: 0px;
+    padding: 20px 0px 0px 75px;;
+    float: left;
+    display: block;
+    font-size: 13rem;
+  }
+  .socialNet{
+    width: 8.33%;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+  }
+  .footerTitle{
+    font-size: 25rem;
+    color: white;
+    padding-left: 75px;
+    padding-top: 40px;
+  }
+  .footerP{
+    color: white;
+    font-size: 15rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 75px;
+  }
+  pre{
+    font-family: Arial;
+    font-size: 17rem;
+    display: block;
+  }
+  .footerNav{
+    list-style-type: none;
+  }
+  .footerNavList a{
+    text-decoration: none;
+    padding-left: 35px;
+    color: white;
+    font-size: 15rem;
+  }
+  .footerLink{
+    color: rgba(128,202,165,1);
+    background: white;
+    padding: 5px 5px 5px 5px;;
+    width: 20%;
+    display: block;
+    margin-left: 75px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .tLogo{
+    padding-left: 40px;
+  }
+  .fLogo{
+    float: right;
+  }
+  .fa{
+    padding-top: 10px;
+  }
+
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+
+  .mainImg {
+    width: 100%;
+  }
+
+  .middle section {
+    width: 50%;
+    padding-left: 15px;
+    text-align: center;
+  }
+
+  .middleLink {
+    width: 35%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+
+
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 425px) {
+
+  .mainImg {
+    display: none;
+  }
+
+  .middle section {
+    width: 80%;
+
+  }
+}
