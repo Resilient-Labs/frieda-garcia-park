@@ -9,19 +9,14 @@ $rob-sec: "Roboto Medium", monospace
 $f-size: 1rem
 $h-size: 2.5rem
 $a-size: 1.5rem
-
 // --- Fonts
-
 @font-face
   font-family: "Roboto Slab Regular"
   src: url('font/Roboto_Slab/RobotoSlab-Regular.ttf')
-
 @font-face
   font-family: "Roboto Medium"
   src: url('font/Roboto_Slab/RobotoSlab-Light.ttf')
-
 // --- Style
-
 .clearfix:before,
 .clearfix:after
   content: ""
@@ -31,6 +26,7 @@ $a-size: 1.5rem
   clear: both
 
 *
+  position: relative
   margin: 0
   padding: 0
   -moz-box-sizing: border-box
@@ -68,7 +64,6 @@ section:first-of-type
   margin-top: 75px * 1.7
 
 section
-  position: relative
   width: 90%
   margin: 0 auto
   margin-bottom: 75px
@@ -76,7 +71,6 @@ section
   border: 1px solid $sea-green
 
 aside
-  position: relative
   top: -76px
   float: left
   width: 33%
@@ -108,15 +102,12 @@ article
     margin-left: 1rem
 
 section:nth-of-type(2n)
-  article,
-  aside
-    position: relative
+  article
     float: left
   aside
     float: right
 
-// Tablets, Small Devices
-@media only screen and (max-width : 768px)
+@media only screen and (max-width:768px)
   *
     padding: 0
     margin: 0
@@ -125,7 +116,6 @@ section:nth-of-type(2n)
   section
     padding: 0
   aside
-    position: relative
     width: 100%
     background: transparent
     box-shadow: none
@@ -133,29 +123,37 @@ section:nth-of-type(2n)
     img
       margin-bottom: 15px
     blockquote
-      margin-top: 10px
+      margin-top: 15px
       display: none
   article
     float: none
     width: 90%
     margin: 0 auto
     h2
-      padding: 10px
+      padding: 15px 0
   section:nth-of-type(2n)
-    aside
-      position: relative
-      width: 100%
-      background: transparent
-      box-shadow: none
-      top: 0
     article
       float: none
       width: 90%
       margin: 0 auto
       h2
-        padding: 10px
+        padding: 15px 0
 
-// Phones, Extra Small Devices
-@media only screen and (max-width: 480px)
+@media only screen and (max-device-width:768px) and (orientation:landscape)
+  section
+    background: $dark-grey
+    overflow: hidden
+  aside
+    display: none
   article
-    width: 100%
+    color: $white
+    text-shadow: 1px 1px 3px #000
+    overflow-y: auto
+    h2
+      margin: 0
+      padding: 15px 0
+  section:nth-of-type(2n)
+    article
+      h2
+        margin: 0
+        padding: 15px 0
