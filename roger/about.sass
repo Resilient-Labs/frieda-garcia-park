@@ -9,28 +9,24 @@ $rob-sec: "Roboto Medium", monospace
 $f-size: 1rem
 $h-size: 2.5rem
 $a-size: 1.5rem
-
 // --- Fonts
-
 @font-face
   font-family: "Roboto Slab Regular"
   src: url('font/Roboto_Slab/RobotoSlab-Regular.ttf')
-
 @font-face
   font-family: "Roboto Medium"
   src: url('font/Roboto_Slab/RobotoSlab-Light.ttf')
-
 // --- Style
-
-.cf:before,
-.cf:after
+.clearfix:before,
+.clearfix:after
   content: ""
   display: table
 
-.cf:after
+.clearfix:after
   clear: both
 
 *
+  position: relative
   margin: 0
   padding: 0
   -moz-box-sizing: border-box
@@ -45,7 +41,7 @@ body
   margin: 0 auto
   font-size: $f-size
 
-h1,h2,h3,h4,h5,h6
+h1,h2,blockquote,h4,h5,h6
   margin: $f-size * 4 0 $f-size * 1.5 0
   font-family: $rob-prime
   font-size: $h-size
@@ -68,7 +64,6 @@ section:first-of-type
   margin-top: 75px * 1.7
 
 section
-  position: relative
   width: 90%
   margin: 0 auto
   margin-bottom: 75px
@@ -76,10 +71,9 @@ section
   border: 1px solid $sea-green
 
 aside
-  position: relative
   top: -76px
   float: left
-  width: 280px
+  width: 33%
   background: $pink
   -webkit-box-shadow: 4px 7px 12px rgba(0,0,0,0.6)
   -moz-box-shadow: 4px 7px 12px rgba(0,0,0,0.6)
@@ -87,7 +81,7 @@ aside
   color: $white
   img
     width: 100%
-  h3
+  blockquote
     font-family: $rob-prime
     font-size: $a-size
     margin: $f-size * 2
@@ -101,59 +95,65 @@ aside
 
 article
   float: right
-  width: 50%
-  margin: $f-size * 1.5 0
+  width: 66%
+  padding: 30px
   ul
     @extend p
     margin-left: 1rem
 
-.reverse
-  article,
-  aside
-    position: relative
+section:nth-of-type(2n)
+  article
     float: left
   aside
     float: right
-// --- Media Queries
-@media (max-width:768px)
+
+@media only screen and (max-width:768px)
   *
     padding: 0
     margin: 0
+  section:first-of-type
+    margin-top: $f-size
   section
     padding: 0
   aside
-    position: relative
     width: 100%
     background: transparent
     box-shadow: none
     top: 0
     img
       margin-bottom: 15px
-    h3
-      margin-top: 10px
+    blockquote
+      margin-top: 15px
       display: none
   article
     float: none
     width: 90%
     margin: 0 auto
     h2
-      padding: 10px
-  .reverse
-    aside
-      position: relative
-      width: 100%
-      background: transparent
-      box-shadow: none
-      top: 0
+      padding: 15px 0
+  section:nth-of-type(2n)
     article
       float: none
       width: 90%
       margin: 0 auto
       h2
-        padding: 10px
+        padding: 15px 0
 
-@media only screen and (min-width:435px)
+@media only screen and (max-device-width:768px) and (orientation:landscape)
   section
-    width: 90%
+    background: $dark-grey
+    overflow: hidden
   aside
     display: none
+  article
+    color: $white
+    text-shadow: 1px 1px 3px #000
+    overflow-y: auto
+    h2
+      margin: 0
+      padding: 15px 0
+  section:nth-of-type(2n)
+    article
+      h2
+        margin: 0
+        padding: 15px 0
