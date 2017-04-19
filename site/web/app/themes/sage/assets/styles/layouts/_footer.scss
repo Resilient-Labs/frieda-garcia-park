@@ -1,0 +1,111 @@
+footer {
+  background: rgba(128,202,165,1);
+  color: white;
+  float: left;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 100%;
+}
+footer section {
+  border: 1px solid black;
+  display: inline-block;
+  float: left;
+  padding: 15px;
+  width: 15%;
+}
+footer section:first-of-type{
+  margin-left: 60px;
+  width: 40%;
+}
+section:nth-of-type(3){
+  padding-left: 70px;
+}
+footer > section + section{
+  margin-left: 40px;
+}
+footer section + section{
+  margin-left: 60px;
+}
+footer > section + section ul li{
+  list-style-type: none;
+  color: white;
+}
+footer > section + section h2{
+  margin-left: 38px;
+}
+footer .copyRight {
+  height: auto;
+  width: 100%;
+  margin: 0px;
+}
+footer .copyRight small {
+  border: 1px solid black;
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  height: auto;
+  width: 40%;
+  margin-top: 80px;
+  padding: 20px 20px 20px 73px;
+}
+footer .copyRight .social {
+  display: inline-block;
+  float: right;
+  width: 20%;
+  margin-top: 75px;
+}
+footer a button {
+  background: white;
+  border: none;
+  color: rgba(128,202,165,1);
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  -webkit-appearance: none;
+}
+footer a{
+  text-decoration: none;
+}
+.fa {
+  padding-top: 0px;
+  color: white;
+}
+.social a{
+  margin-left: 15px;
+}
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+  footer {
+
+  }
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  footer section {
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  footer section {
+    width: 100%;
+  }
+}
