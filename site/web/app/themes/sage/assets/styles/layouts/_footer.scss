@@ -1,0 +1,125 @@
+/*-----------------------------------
+# Font
+------------------------------------*/
+@font-face {
+  src: url(../../assets/fonts/Roboto-Slab/RobotoSlab-Regular.ttf);
+  font-family: "Roboto Slab Regular";
+}
+@font-face {
+  src: url(../../assets/fonts/Roboto-Slab/RobotoSlab-Thin.ttf);
+  font-family: "Roboto Medium";
+}
+/*-----------------------------------
+# Footer
+------------------------------------*/
+footer {
+  clear: both;
+  background: rgba(128,202,165,1);
+  color: white;
+  float: left;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+}
+footer section {
+  display: inline-block;
+  float: left;
+  padding: 15px;
+  width: 30%;
+}
+/*.footerWrap .hostEvent {*/
+  /*width: 50%;*/
+/*}*/
+footer .copyRight {
+  height: 50px;
+  width: 100%;
+}
+footer .copyRight small {
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  height: 50px;
+  width: 75%;
+}
+footer .copyRight .social {
+  display: inline-block;
+  float: right;
+  width: 20%;
+}
+/*.socialNet {*/
+  /*width: 8.33%;*/
+  /*height: 50px;*/
+  /*margin: 0px;*/
+  /*padding: 0px;*/
+  /*float: left;*/
+/*}*/
+/*footer h2 {*/
+  /*font-size: 18px;*/
+  /*color: white;*/
+  /*padding-left: 75px;*/
+  /*padding-top: 40px;*/
+/*}*/
+/*footer p {*/
+  /*color: white;*/
+  /*font-size: 15px;*/
+  /*width: 80%;*/
+  /*margin: 0 auto;*/
+  /*margin-left: 75px;*/
+/*}*/
+footer nav ul {
+  list-style-type: none;
+}
+footer nav ul li a {
+  color: inherit;
+  padding-left: 35px;
+  text-decoration: none;
+}
+footer a button {
+  background: white;
+  border: none;
+  color: rgba(128,202,165,1);
+  display: block;
+  font-size: 16px;
+  margin-top: 20px;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+  -webkit-appearance: none;
+}
+.fa {
+  padding-top: 10px;
+}
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+  footer {
+
+  }
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  footer section {
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  footer section {
+    width: 100%;
+  }
+}

@@ -87,7 +87,7 @@ var cssTasks = function(filename) {
     })
     .pipe(function() {
       return gulpif('*.less', less());
-    })
+   })
     .pipe(function() {
       return gulpif('*.scss', sass({
         outputStyle: 'nested', // libsass doesn't support expanded yet
