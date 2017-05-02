@@ -1,12 +1,22 @@
-<header class="banner">
-  <div class="container">
-    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <nav class="nav-primary">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
-      ?>
-    </nav>
-  </div>
-</header>
+ <!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+  <head>
+    <meta charset="<?php bloginfo ('charset'); ?>">
+    <meta name="viewport" content="width=device-width">
+    <title> <?php bloginfo('name'); ?></title>
+    <?php wp_head(); ?>
+  <head>
+  <body <?php body_class(); ?>>
+    <header id="top">
+      <figure>
+        <a href="<?php echo home_url(); ?>"><img src="http://frieda-garcia-park.dev/app/uploads/2017/05/fgp_logo.png" alt="Logo"></a>
+      </figure>
+      <nav>
+        <?php
+          $args = array(
+            'theme_location' => 'primary'
+          );
+        ?>
+        <?php wp_nav_menu(); ?>
+      </nav>
+    </header>
