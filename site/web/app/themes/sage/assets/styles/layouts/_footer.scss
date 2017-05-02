@@ -1,13 +1,14 @@
 footer{
   background: $sea-green;
   margin-top: 45px;
+  padding: 0 45px;
   width: 100%;
   font-size: $f-size;
   color: $white;
   font-family: $rob-sec;
-  padding: 15px;
 }
 footer section{
+  margin: 0 auto;
   width: 33.3333%;
   padding: 15px;
   float: left;
@@ -18,12 +19,13 @@ footer section p{
 }
 footer section a button{
   padding: 15px;
-  color: $pink;
+  color: $sea-green;
   background: $white;
   border-style: none;
-  font-size: $f-size * 0.7;
+  font-size: $f-size;
+  font-weight: bolder;
 }
-  button:hover{
+a:hover, button:hover{
     color: $pink;
   }
 footer section ul{
@@ -35,7 +37,6 @@ footer section ul li{
 }
 footer section:last-of-type{
   width: 100%;
-  margin-top: 55px;
 }
 small{
   display: block;
