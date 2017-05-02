@@ -10,7 +10,7 @@
   <section class="container-about clearfix">
     <article>
       <h2><?php echo get_field('about-top-title'); ?></h2>
-      <?php echo get_field('about-top-body') ?>
+      <?php echo get_field('about-top-body'); ?>
     </article>
     <aside>
       <img src="<?php echo get_field('about-top-image'); ?>"/>
@@ -22,7 +22,7 @@
   <section class="container-about clearfix">
     <article>
       <h2><?php echo get_field('about-middle-title'); ?></h2>
-      <?php echo get_field('about-middle-body') ?>
+      <?php echo get_field('about-middle-body'); ?>
     </article>
     <aside>
       <img src="<?php echo get_field('about-middle-image'); ?>"/>
@@ -34,7 +34,7 @@
   <section class="container-about clearfix">
     <article>
       <h2><?php echo get_field('about-bottom-title'); ?></h2>
-      <?php echo get_field('about-bottom-body') ?>
+      <?php echo get_field('about-bottom-body'); ?>
     </article>
     <aside>
       <img src="<?php echo get_field('about-bottom-image'); ?>"/>
