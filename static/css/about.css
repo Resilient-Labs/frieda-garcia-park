@@ -60,12 +60,7 @@ section.container-about article {
   padding: 30px;
   width: 66%;
 }
-section.container-about article ul {
-  margin-left: 1rem;
-}
-section.container-about article ul li {
 
-}
 section.container-about aside {
   /*background: #f7a5aa;*/
   box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.6);
@@ -98,9 +93,7 @@ section.container-about aside span {
   font-weight: normal;
   margin-bottom: 0.5em;
 }
-section.container-about:first-of-type {
-  /*margin-top: 127.5px;*/
-}
+
 section.container-about:nth-of-type(2n) article {
   float: left;
 }

@@ -1,0 +1,112 @@
+/*-----------------------------------
+# Page Template About
+------------------------------------*/
+section.container-about {
+  border: 1px solid #80caa5;
+  position: relative;
+  margin: 76px auto 0 auto;
+  max-width: calc(100% - 60px);
+  padding: 0 45px;
+  width: 100%;
+}
+section.container-about article {
+  float: right;
+  padding: 30px;
+  width: 66%;
+}
+section.container-about aside {
+  background: $pink;
+  box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 4px 7px 12px rgba(0, 0, 0, 0.6);
+  color: $white;
+  float: left;
+  position: absolute;
+  top: -77px;
+  width: 30%;
+}
+section.container-about aside blockquote {
+  float: left;
+  font-family: "Roboto Slab Regular", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  margin: 0 auto;
+  padding: 30px 15px;
+  text-transform: none;
+}
+section.container-about aside img {
+  float: left;
+  height: auto;
+  width: 100%;
+}
+section.container-about aside span {
+  display: block;
+  font-size: 3em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+section.container-about:first-of-type{
+  margin-top: 75px * 1.7;
+}
+
+section.container-about:nth-of-type(2n) article {
+  float: left;
+}
+section.container-about:nth-of-type(2n) aside {
+  float: right;
+  right: 30px;
+}
+section.container-about:nth-of-type(2n+1) aside {
+  left: 30px;
+}
+      /*-----------------------------------
+      # Page Template About - Media Queries
+      ------------------------------------*/
+@media only screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0; }
+  section.container-about article {
+    float: none;
+    width: 90%;
+    margin: 0 auto; }
+    article h2 {
+      padding: 5px 0; }
+  section.container-about aside {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    top: 0; }
+    section.container-about aside blockquote {
+      margin-top: 15px;
+      display: none; }
+    section.container-about aside img {
+      display: none;}
+  section.container-about:first-of-type {
+    margin-top: 1rem; }
+  section.container-about:nth-of-type(2n) article {
+    float: none;
+    width: 90%;
+    margin: 0 auto; }
+    section.container-about:nth-of-type(2n) article h2 {
+      padding: 15px 0; }
+    }
+
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
+  section.container-about {
+    background: #333333;
+    overflow: hidden; }
+  section.container-about article {
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+  }
+    section.container-about article h2 {
+      margin: 0;
+      padding: 15px 0; }
+  section.container-about aside {
+    display: none; }
+  section.container-about:nth-of-type(2n) article h2 {
+    margin: 0;
+    padding: 15px 0; }
+  }

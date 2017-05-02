@@ -1,0 +1,119 @@
+/*HEADER*/
+header{
+  width: 100%;
+  height: 130px;
+  padding: 0;
+  margin: 0 auto;
+  background: linear-gradient(to right, rgba(128,202,165,1), rgba(170,223,241,1));
+}
+/*LOGO*/
+header figure{
+  height: 150px;
+  width: 30%;
+  margin: 0px;
+  float: left;
+  /*background: url(logo.png);
+  background-size: 48%;
+  background-repeat: no-repeat;
+  background-position: 100px 50px;*/
+}
+header figure img{
+  height: 90px;
+  width: 50%;
+  margin: 40px 0px 0px 100px;
+}
+/*NAVIGATION*/
+header nav{
+  width: 70%;
+  height: 150px;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  position: relative;
+}
+header nav ul{
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  margin-top: 40px;
+  padding-top: 15px;
+}
+header nav ul li{
+  font-size: 15rem;
+  display: inline;
+  margin-right: 80px;
+}
+header nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+.hamburger{
+  position: absolute;
+  left: 830px;
+  top: 53px;
+  border-style: none;
+  background: inherit;
+  color: white;
+  /*display: none;*/
+}
+.cross{
+  position: absolute;
+  left: 830px;
+  top: 53px;
+  border-style: none;
+  background: inherit;
+  font-size: 30px;
+  color: white;
+  /*display: none;*/
+}
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+  header nav{
+    width: 100%;
+  }
+
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+  header nav{
+    display: none;
+  }
+  header figure img{
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  header nav{
+    display: none;
+  }
+  header figure img{
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  header nav ul{
+    display: none;
+  }
+  header figure{
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+  }
+  header figure img{
+    width: 100%;
+    margin: 0px;
+    float: left;
+  }
+}

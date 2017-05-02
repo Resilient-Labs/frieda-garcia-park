@@ -1,0 +1,52 @@
+footer{
+  background: $sea-green;
+  margin-top: 45px;
+  width: 100%;
+  font-size: $f-size;
+  color: $white;
+  font-family: $rob-sec;
+  padding: 15px;
+}
+footer section{
+  width: 33.3333%;
+  padding: 15px;
+  float: left;
+}
+footer section p{
+  display: block;
+  font-size: 1rem;
+}
+footer section a button{
+  padding: 15px;
+  color: $pink;
+  background: $white;
+  border-style: none;
+  font-size: $f-size * 0.7;
+}
+  button:hover{
+    color: $pink;
+  }
+footer section ul{
+  padding-left: 5px;
+  list-style-type: none;
+}
+footer section ul li{
+  color: $white;
+}
+footer section:last-of-type{
+  width: 100%;
+  margin-top: 55px;
+}
+small{
+  display: block;
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+}
+.social{
+  padding: 0px 0px 0px 400px;
+}
+.fa{
+  color: white;
+  margin-left: 20px;
+}
