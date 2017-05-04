@@ -1,5 +1,5 @@
 /*-----------------------------------
-# Page Template About
+# Page Template: About
 ------------------------------------*/
 section.container-about {
   border: 1px solid #80caa5;
@@ -60,53 +60,40 @@ section.container-about:nth-of-type(2n) aside {
 section.container-about:nth-of-type(2n+1) aside {
   left: 30px;
 }
-      /*-----------------------------------
-      # Page Template About - Media Queries
-      ------------------------------------*/
-@media only screen and (max-width: 768px) {
-  * {
-    padding: 0;
-    margin: 0; }
-  section.container-about article {
-    float: none;
-    width: 90%;
-    margin: 0 auto; }
-    article h2 {
-      padding: 5px 0; }
-  section.container-about aside {
-    width: 100%;
-    background: transparent;
-    box-shadow: none;
-    top: 0; }
-    section.container-about aside blockquote {
-      margin-top: 15px;
-      display: none; }
-    section.container-about aside img {
-      display: none;}
-  section.container-about:first-of-type {
-    margin-top: 1rem; }
-  section.container-about:nth-of-type(2n) article {
-    float: none;
-    width: 90%;
-    margin: 0 auto; }
-    section.container-about:nth-of-type(2n) article h2 {
-      padding: 15px 0; }
-    }
-
-@media only screen and (max-device-width: 768px) and (orientation: landscape) {
-  section.container-about {
-    background: #333333;
-    overflow: hidden; }
-  section.container-about article {
-    color: white;
-    text-shadow: 1px 1px 3px #000;
-  }
-    section.container-about article h2 {
-      margin: 0;
-      padding: 15px 0; }
-  section.container-about aside {
-    display: none; }
-  section.container-about:nth-of-type(2n) article h2 {
-    margin: 0;
-    padding: 15px 0; }
-  }
+/*-----------------------------------
+# Page Template: Blog Page
+------------------------------------*/
+.ad{
+  width: 25%;
+  float: right;
+  text-align: center;
+}
+section.blog-post-row {
+  margin-bottom: 30px;
+  position: relative;
+  width: 75%;
+}
+section.blog-post-row .media {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+}
+section.blog-post-row .media .img-wrap {
+  border: 1px solid pink;
+  height: 100%;
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  width: 100%;
+  z-index: -1;
+}
+section.blog-post-row .media img {
+  height: auto;
+  width: 100%;
+}
+section.blog-post-row .content {
+  display: inline-block;
+  float: right;
+  padding: 15px;
+  width: 75%;
+}
