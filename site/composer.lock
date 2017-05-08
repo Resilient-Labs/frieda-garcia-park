@@ -112,12 +112,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3"
+                "reference": "c331bf684535a76f8555011d2b7e4e2e3e66c10a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/c331bf684535a76f8555011d2b7e4e2e3e66c10a",
+                "reference": "c331bf684535a76f8555011d2b7e4e2e3e66c10a",
                 "shasum": ""
             },
             "require": {
@@ -415,7 +415,7 @@
                 "wordpress",
                 "wp-sync-db"
             ],
-            "time": "2016-04-24 08:56:12"
+            "time": "2016-04-24T08:56:12+00:00"
         },
         {
             "name": "wp-sync-db/wp-sync-db-media-files",
@@ -447,7 +447,7 @@
                 "wordpress",
                 "wp-sync-db"
             ],
-            "time": "2016-03-07 16:34:12"
+            "time": "2016-03-07T16:34:12+00:00"
         },
         {
             "name": "wpackagist-plugin/advanced-custom-fields",
@@ -460,7 +460,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.11.zip",
-                "reference": "tags/4.4.11",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -480,7 +480,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/disable-comments.2.6.zip",
-                "reference": "tags/2.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -500,7 +500,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.4.9.6.2.zip",
-                "reference": "tags/4.9.6.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -520,7 +520,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/post-types-order.1.9.3.zip",
-                "reference": "tags/1.9.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -540,7 +540,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/sucuri-scanner.1.8.3.zip",
-                "reference": "tags/1.8.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -560,7 +560,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.4.5.6.zip",
-                "reference": "tags/4.5.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -580,7 +580,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.5.4.zip",
-                "reference": "tags/0.9.5.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -600,7 +600,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip",
-                "reference": "tags/0.6.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -620,7 +620,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.7.zip",
-                "reference": "tags/4.7",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -633,16 +633,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.7.0",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed"
+                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
+                "reference": "f7dfecbee89d68ab475a6c9e17d22bc9b69aed97",
                 "shasum": ""
             },
             "require": {
@@ -707,7 +707,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-09-01T23:53:02+00:00"
+            "time": "2017-05-03T23:30:39+00:00"
         }
     ],
     "aliases": [],
