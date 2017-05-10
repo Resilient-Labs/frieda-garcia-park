@@ -3,9 +3,6 @@
  * Template Name: Host Event Template
  */
 ?>
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
   <section class="row">
     <section class="content">
       <h2>Host an Event</h2>
@@ -71,4 +68,3 @@
       </p>
     </section>
   </section>
-<?php endwhile; ?>

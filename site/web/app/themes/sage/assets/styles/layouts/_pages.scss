@@ -170,6 +170,10 @@ section.blog-post-row .content {
   opacity: .3;
   width: 100%;
 }
+  h3{
+    text-align: center;
+  }
+
 .home.row {
   display: block;
   float: left;
@@ -201,8 +205,17 @@ section.blog-post-row .content {
   border: 1px solid rgba(247,166,170,1);
 }
 .home.row .media img {
-  height: auto;
-  margin: -15px 0 10px -15px;
+  position: relative;
+  top: -30px;
+  left: -30px;
+  height: 100%;
+  width: 100%;
+}
+.home.row .media img(even) {
+  position: relative;
+  top: -30px;
+  left: 30px;
+  height: 100%;
   width: 100%;
 }
 .home.row .content a {

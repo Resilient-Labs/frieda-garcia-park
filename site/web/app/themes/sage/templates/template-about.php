@@ -4,9 +4,6 @@
  */
 ?>
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
   <section class="container-about clearfix">
     <article>
       <h2><?php echo get_field('about-top-title'); ?></h2>
@@ -43,4 +40,3 @@
       </blockquote>
     </aside>
   </section>
-<?php endwhile; ?>
