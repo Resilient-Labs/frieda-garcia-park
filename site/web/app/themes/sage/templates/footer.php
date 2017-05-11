@@ -6,7 +6,7 @@
       Garcia Park. There may be an opportunity for the friends of Frieda
       Garcia Park to help underwrite the costs, at our discretion.
     </p>
-    <a href="#">
+    <a href="http://frieda-garcia-park.com/host-an-event">
       <button>Host An Event</button>
     </a>
   </section>
