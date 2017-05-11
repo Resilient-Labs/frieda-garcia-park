@@ -5,66 +5,47 @@
 ?>
   <section class="row">
     <section class="content">
-      <h2>Host an Event</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales
-        orci non tristique. Vivamus faucibus, eros quis sollicitudin maximus,
-        orci justo ornare massa, amet imperdiet dolor neque quis quam.
-      </p>
-      <p>
-        Ornare, efficitur nisl sed, fringilla velit. Fusce a diam cursus,
-        tincidunt sapien non, viverra tortor. Fusce a odio a turpis faucibus
-        efficitur. Integer placerat elit a orci elementum gravida. Morbi at
-        laoreet leo. Donec sed dui in neque tempor feugiat. commodo molestie maximus.
-      </p>
-      <p>
-        Massa porta vulputate. Proin at placerat risus. Vivamus eu purus efficitur,
-        vulputate urna vel, laoreet dui. Mauris rutrum, turpis quis malesuada
-      </p>
+      <h2><?php echo get_field('host-event-title'); ?></h2>
+      <?php echo get_field('host-event-body');?>
     </section>
     <section class="media">
       <figure class="media-bg">
-        <img src="./images/ffgp_park.jpg" alt="Kids at the park">
+        <img src="<?php echo get_field('host-event-image');?>">
       </figure>
     </section>
   </section>
   <section class="row">
-    <h2>Guidelines around park usage</h2>
+    <h2><?php echo get_field('rules-title'); ?></h2>
     <section class="host-event-card">
       <figure>
-        <img src="images/ffgp_smoking.png" alt="#">
+        <img src="<?php echo get_field('rule-one-image'); ?>">
       </figure>
-      <p>
-        No alcohol, smoking or
-        drug usage permitted on
-        the premises'
-      </p>
+      <div>
+      <?php echo get_field('rule-one'); ?>
+    </div>
     </section>
     <section class="host-event-card">
       <figure>
-        <img src="images/ffgp_pets.png" alt="#">
+        <img src="<?php echo get_field('rule-two-image'); ?>">
       </figure>
-      <p>
-        No pets are allowed in
-        the park at any time
-      </p>
+      <div>
+      <?php echo get_field('rule-two'); ?>
+    </div>
     </section>
     <section class="host-event-card">
       <figure>
-        <img src="images/ffgp_capacity.png" alt="#">
+        <img src="<?php echo get_field('rule-three-image'); ?>">
       </figure>
-      <p>
-        The Max Person Capacity at a time in the park is 88
-      </p>
+      <div>
+      <?php echo get_field('rule-three'); ?>
+    </div>
     </section>
     <section class="host-event-card">
       <figure>
-        <img src="images/ffgp_hours.png" alt="#">
+        <img src="<?php echo get_field('rule-four-image'); ?>">
       </figure>
-      <p>
-        Hours of Operation: Sunrise
-        to Sunset, Monday through
-        Sunday.
-      </p>
+      <div>
+      <?php echo get_field('rule-four'); ?>
+    </div>
     </section>
   </section>
