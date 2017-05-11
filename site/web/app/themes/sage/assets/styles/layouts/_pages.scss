@@ -104,7 +104,6 @@ section.blog-post-row .content {
 .middle, .row {
   display: block;
   float: left;
-  height: auto;
   margin: 0 auto;
   padding: 30px;
   position: relative;
@@ -121,7 +120,6 @@ section.blog-post-row .content {
   width: 50%;
 }
 .row .media figure img {
-  height: auto;
   margin: -15px 0 15px 15px;
   width: 100%;
 }
@@ -129,10 +127,10 @@ section.blog-post-row .content {
   background: rgba(128,202,165,1);
 }
 .row .host-event-card {
-  display: inline-block;
   float: left;
   padding: 15px;
   width: 25%;
+  height: 100%;
 }
 .row .host-event-card figure {
   background-color: rgba(246,165,170,1);
@@ -147,10 +145,11 @@ section.blog-post-row .content {
   text-align: center;
   width: 50%;
 }
-.row .host-event-card p {
-  border: 1px solid rgba(246,165,170,1);
+.row .host-event-card div {
+  border: 1px solid $pink;
   margin: 0;
   padding: 15px;
+  height: 100%;
   width: 100%;
 }
 /*-----------------------------------
