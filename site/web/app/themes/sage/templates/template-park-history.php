@@ -9,33 +9,33 @@
   </section>
   <section class="home row">
     <figure class="media">
-      <img src="<?php echo get_field('history-top-image');?>" alt="Frieda Garcia Park">
+      <img src="<?php echo get_field('history-top-image');?>">
     </figure>
     <article class="content">
       <h2><?php echo get_field('history-top-title');?></h2>
       <?php echo get_field('history-top-body');?>
-      <a href="#"><?php echo get_field('history-top-button');?><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      <a href="http://frieda-garcia-park.dev/about/"><?php echo get_field('history-top-button');?><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </article>
   </section>
   <section class="home row">
     <figure class="media">
-      <img src="<?php echo get_field('history-middle-image');?>" alt="Frieda Garcia Park">
+      <img src="<?php echo get_field('history-middle-image');?>">
     </figure>
     <article class="content">
       <h2><?php echo get_field('history-middle-title');?></h2>
       <?php echo get_field('history-middle-body');?>
-      <a href="#"><?php echo get_field('history-middle-button');?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+      <a href="http://frieda-garcia-park.dev/get-involved/"><?php echo get_field('history-middle-button');?><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
     </article>
   </section>
   <section class="home row">
     <figure class="media">
-      <img src="<?php echo get_field('history-bottom-image');?>" alt="Frieda Garcia Park">
+      <img src="<?php echo get_field('history-bottom-image');?>">
     </figure>
     <article class="content">
       <h2><?php echo get_field('history-bottom-title');?></h2>
       <?php echo get_field('history-bottom-body');?>
-      <a href="#"><?php echo get_field('history-bottom-button');?><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      <a href="http://frieda-garcia-park.dev/host-an-event/"><?php echo get_field('history-bottom-button');?><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </a>
     </article>
   </section>
