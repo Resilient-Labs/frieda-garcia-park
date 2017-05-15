@@ -61,44 +61,6 @@ section.container-about:nth-of-type(2n+1) aside {
   left: 30px;
 }
 /*-----------------------------------
-# Page Template: Blog Page
-------------------------------------*/
-.ad{
-  width: 25%;
-  float: right;
-  text-align: center;
-}
-section.blog-post-row {
-  float: left;
-  clear: both;
-  padding: 30px;
-  position: relative;
-  width: 75%;
-  border: $test;
-}
-section.blog-post-row .media {
-  display: inline-block;
-  width: 25%;
-}
-section.blog-post-row .media .img-wrap {
-  border: 1px solid pink;
-  height: 100%;
-  position: absolute;
-  right: -10px;
-  top: 10px;
-  width: 100%;
-  z-index: -1;
-}
-section.blog-post-row .media img {
-  height: auto;
-  width: 100%;
-}
-section.blog-post-row .content {
-  float: right;
-  padding: 15px;
-  width: 75%;
-}
-/*-----------------------------------
 # Page Template: Host Event
 ------------------------------------*/
 .middle, .row {
