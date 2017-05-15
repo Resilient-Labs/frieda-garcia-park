@@ -1,0 +1,35 @@
+/*-----------------------------------
+# Blog Page
+------------------------------------*/
+section.blog-post-row {
+  float: left;
+  clear: both;
+  padding: 15px;
+  width: 75%;
+  border: $test;
+}
+section.blog-post-row .img-wrap {
+  float: left;
+  border: 1px solid $pink;
+  width: 25%;
+}
+section.blog-post-row .img-wrap img {
+  top: -15px;
+  left: -15px;
+  width: 100%;
+}
+section.blog-post-row article .content {
+  float: left;
+  margin-left: 15px;
+  width: 70%;
+}
+section.blog-post-row article .content h2{
+    margin: 0;
+    font-size: $h-size * 1.5;
+  }
+section.blog-post-row article .content p{
+    font-size: $f-size * .7;
+  }
+  /*-----------------------------------
+  # Blog Post
+  ------------------------------------*/
