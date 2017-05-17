@@ -1,6 +1,6 @@
-<header>
-    <a href=""><img src="../../sage/assets/images/logo.png" alt="Logo"/></a>
-  <nav>
+<header class="clearfix">
+  <img src="logo.png" alt="ffgp"/>
+  <nav class="nav-mobile clearfix">
     <?php wp_nav_menu(); ?>
   </nav>
 </header>
