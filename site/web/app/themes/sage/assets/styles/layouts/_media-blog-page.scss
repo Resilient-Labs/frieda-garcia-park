@@ -1,0 +1,58 @@
+
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+  .mainImg {
+    height: 540px;
+  }
+  .middle section, .single-blog-post-content section {
+    margin: 30px;
+  }
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+  .mainImg {
+    height: 400px;
+  }
+  .middle section, .single-blog-post-content section {
+    margin: 30px;
+    padding: 30px;
+  }
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  .mainImg {
+    height: 320px;
+  }
+  .mainTitle, .mainImg h2 {
+    top: 25%;
+  }
+  .middle section, .single-blog-post-content section {
+    margin: 15px;
+    padding: 15px;
+  }
+  .single-blog-post-content img {
+    margin: 15px auto;
+    padding: 0;
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  .mainImg {
+    height: 240px;
+  }
+  .mainTitle, .mainImg h2 {
+    top: 15%;
+  }
+  .single-blog-post-content .middleLink, .single-blog-post-content .btn {
+    margin: 15px auto;
+  }
+}

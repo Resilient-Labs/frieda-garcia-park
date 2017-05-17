@@ -91,7 +91,6 @@ function display_sidebar() {
     is_page_template('templates/template-host-event.php'),
     is_page_template('templates/template-park-history.php')
   ]);
-
   return apply_filters('sage/display_sidebar', $display);
 }
 

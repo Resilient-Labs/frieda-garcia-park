@@ -61,44 +61,6 @@ section.container-about:nth-of-type(2n+1) aside {
   left: 30px;
 }
 /*-----------------------------------
-# Page Template: Blog Page
-------------------------------------*/
-.ad{
-  width: 25%;
-  float: right;
-  text-align: center;
-}
-section.blog-post-row {
-  float: left;
-  clear: both;
-  padding: 30px;
-  position: relative;
-  width: 75%;
-  border: $test;
-}
-section.blog-post-row .media {
-  display: inline-block;
-  width: 25%;
-}
-section.blog-post-row .media .img-wrap {
-  border: 1px solid pink;
-  height: 100%;
-  position: absolute;
-  right: -10px;
-  top: 10px;
-  width: 100%;
-  z-index: -1;
-}
-section.blog-post-row .media img {
-  height: auto;
-  width: 100%;
-}
-section.blog-post-row .content {
-  float: right;
-  padding: 15px;
-  width: 75%;
-}
-/*-----------------------------------
 # Page Template: Host Event
 ------------------------------------*/
 .middle, .row {
@@ -149,13 +111,12 @@ section.blog-post-row .content {
   border: 1px solid $pink;
   margin: 0;
   padding: 15px;
-  height: 100%;
+  min-height: 120px;
   width: 100%;
 }
 /*-----------------------------------
 # Page Template: Park History
 ------------------------------------*/
-
 .hero.banner {
   background: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0, 1));
   height: 480px;
@@ -171,11 +132,11 @@ section.blog-post-row .content {
   opacity: .3;
   width: 100%;
 }
-  h3{
+.hero.banner h3{
     text-align: center;
   }
 .home.row:first-of-type{
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .home.row {
   display: block;
@@ -191,7 +152,7 @@ section.blog-post-row .content {
   margin: 0 auto;
   padding: 15px;
 }
-  h2{
+.home.row .content h2{
     font-size: $h-size * 1.7;
   }
 .home.row .content:nth-of-type(2n) {
@@ -202,7 +163,6 @@ section.blog-post-row .content {
 }
 .home.row .media {
   display: inline-block;
-  border: $test;
   float: left;
   margin: 0;
   width: 45%;
@@ -265,3 +225,11 @@ section.blog-post-row .content {
   top: 20%;
   width: 50%;
 }
+/*-----------------------------------
+# Media Queries [thank god for @import...]
+------------------------------------*/
+@import 'media-about';
+@import 'media-p-h';
+@import 'media-blog';
+@import 'media-blog-page';
+@import 'media-host';
