@@ -1,5 +1,5 @@
 /*-----------------------------------
-# Page Template About
+# Page Template: About
 ------------------------------------*/
 section.container-about {
   border: 1px solid #80caa5;
@@ -60,53 +60,176 @@ section.container-about:nth-of-type(2n) aside {
 section.container-about:nth-of-type(2n+1) aside {
   left: 30px;
 }
-      /*-----------------------------------
-      # Page Template About - Media Queries
-      ------------------------------------*/
-@media only screen and (max-width: 768px) {
-  * {
-    padding: 0;
-    margin: 0; }
-  section.container-about article {
-    float: none;
-    width: 90%;
-    margin: 0 auto; }
-    article h2 {
-      padding: 5px 0; }
-  section.container-about aside {
-    width: 100%;
-    background: transparent;
-    box-shadow: none;
-    top: 0; }
-    section.container-about aside blockquote {
-      margin-top: 15px;
-      display: none; }
-    section.container-about aside img {
-      display: none;}
-  section.container-about:first-of-type {
-    margin-top: 1rem; }
-  section.container-about:nth-of-type(2n) article {
-    float: none;
-    width: 90%;
-    margin: 0 auto; }
-    section.container-about:nth-of-type(2n) article h2 {
-      padding: 15px 0; }
-    }
-
-@media only screen and (max-device-width: 768px) and (orientation: landscape) {
-  section.container-about {
-    background: #333333;
-    overflow: hidden; }
-  section.container-about article {
-    color: white;
-    text-shadow: 1px 1px 3px #000;
+/*-----------------------------------
+# Page Template: Host Event
+------------------------------------*/
+.middle, .row {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+.row .content {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+.row .media {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+.row .media figure img {
+  margin: -15px 0 15px 15px;
+  width: 100%;
+}
+.row .media figure.media-bg {
+  background: rgba(128,202,165,1);
+}
+.row .host-event-card {
+  float: left;
+  padding: 15px;
+  width: 25%;
+  height: 100%;
+}
+.row .host-event-card figure {
+  background-color: rgba(246,165,170,1);
+  margin: auto;
+  padding: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+.row .host-event-card figure img {
+  height: auto;
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+.row .host-event-card div {
+  border: 1px solid $pink;
+  margin: 0;
+  padding: 15px;
+  min-height: 120px;
+  width: 100%;
+}
+/*-----------------------------------
+# Page Template: Park History
+------------------------------------*/
+.hero.banner {
+  background: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0, 1));
+  height: 480px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+.hero.banner img {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  opacity: .3;
+  width: 100%;
+}
+.hero.banner h3{
+    text-align: center;
   }
-    section.container-about article h2 {
-      margin: 0;
-      padding: 15px 0; }
-  section.container-about aside {
-    display: none; }
-  section.container-about:nth-of-type(2n) article h2 {
-    margin: 0;
-    padding: 15px 0; }
+.home.row:first-of-type{
+  margin-top: 60px;
+}
+.home.row {
+  display: block;
+  float: left;
+  padding: 30px;
+  margin: 30px 0;
+}
+.home.row:nth-of-type(odd) .media {
+  float: right;
+}
+.home.row .content {
+  float: left;
+  margin: 0 auto;
+  padding: 15px;
+}
+.home.row .content h2{
+    font-size: $h-size * 1.7;
   }
+.home.row .content:nth-of-type(2n) {
+  display: inline-block;
+  float: right;
+  padding: 15px;
+  width: 45%;
+}
+.home.row .media {
+  display: inline-block;
+  float: left;
+  margin: 0;
+  width: 45%;
+}
+.home.row:nth-of-type(2) .media {
+  border: 1px solid rgba(128,202,165,1);
+}
+.home.row:nth-of-type(3) .media {
+  border: 1px solid rgba(170,223,241,1);
+}
+.home.row:nth-of-type(4) .media {
+  border: 1px solid rgba(247,166,170,1);
+}
+.home.row .media img {
+  position: relative;
+  border: $test;
+  top: -30px;
+  left: -30px;
+  height: 100%;
+  width: 100%;
+}
+.home.row .media img(even) {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  height: 100%;
+  width: 100%;
+}
+.home.row .content a {
+  color: $white;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+}
+.home.row:nth-of-type(2) .content a {
+  background: rgba(128,202,165,1);
+}
+.home.row:nth-of-type(2) .content h2 {
+  color: $sea-green;
+}
+.home.row:nth-of-type(3) .content a  {
+  background: rgba(170,223,241,1);
+}
+.home.row:nth-of-type(3) .content h2 {
+  color: $baby-blue;
+}
+.home.row:nth-of-type(4) .content a  {
+  background: rgba(247,166,170,1);
+}
+.home.row:nth-of-type(4) .content h2 {
+  color: $pink;
+}
+.hero.banner h3 {
+  color: #fff;
+  left: 25%;
+  margin: 60px auto;
+  position: absolute;
+  top: 20%;
+  width: 50%;
+}
+/*-----------------------------------
+# Media Queries [thank god for @import...]
+------------------------------------*/
+@import 'media-about';
+@import 'media-p-h';
+@import 'media-blog';
+@import 'media-blog-page';
+@import 'media-host';

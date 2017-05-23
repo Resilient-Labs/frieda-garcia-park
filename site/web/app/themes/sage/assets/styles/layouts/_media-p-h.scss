@@ -1,0 +1,60 @@
+
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+  .hero.banner {
+    height: 540px;
+  }
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+  .hero.banner {
+    height: 400px;
+  }
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  .hero.banner {
+    height: 320px;
+  }
+  .hero.banner h3 {
+    left: 0;
+    top: 10%;
+    width: 100%;
+  }
+  .home.row .content {
+    padding: 0;
+    width: 100%;
+  }
+  .home.row .media {
+    width: 100%;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  .hero.banner {
+    height: 240px;
+  }
+  .hero.banner h3 {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .home.row .content {
+    padding: 0;
+    width: 100%;
+  }
+  .home.row .media {
+    width: 100%;
+  }
+  .home.row .content a {
+    width: 100%;
+  }
+}

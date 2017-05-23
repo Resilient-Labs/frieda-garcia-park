@@ -1,12 +1,6 @@
-<header class="banner">
-  <div class="container">
-  <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="images/logo.png" alt="Logo"></a>
-    <nav class="nav-primary">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
-      ?>
-    </nav>
-  </div>
+<header class="clearfix">
+  <img src="logo.png" alt="ffgp"/>
+  <nav class="nav-mobile clearfix">
+    <?php wp_nav_menu(); ?>
+  </nav>
 </header>
