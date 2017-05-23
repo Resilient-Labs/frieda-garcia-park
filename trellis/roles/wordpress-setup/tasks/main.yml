@@ -40,3 +40,9 @@
     cron_file: "wordpress-{{ item.key | replace('.', '_') }}"
   with_dict: "{{ wordpress_sites }}"
   when: site_env.disable_wp_cron and not item.value.multisite.enabled | default(false)
+
+- name: PHP configuration file
+  template:
+    src: php.ini.j2
+    dest: /etc/php/7.0/fpm/php.ini
+  notify: reload php-fpm
