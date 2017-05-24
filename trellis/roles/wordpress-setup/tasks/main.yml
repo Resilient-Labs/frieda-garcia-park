@@ -41,8 +41,8 @@
   with_dict: "{{ wordpress_sites }}"
   when: site_env.disable_wp_cron and not item.value.multisite.enabled | default(false)
 
-- name: PHP configuration file
+- name: php-fpm configuration file
   template:
-    src: php.ini.j2
-    dest: /etc/php/7.0/fpm/php.ini
+    src: php-fpm.conf.j2
+    dest: /etc/php/7.0/fpm/pool.d/wordpress.conf
   notify: reload php-fpm
