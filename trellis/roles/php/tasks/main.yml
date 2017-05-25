@@ -59,3 +59,9 @@
     creates: /etc/php/7.0/fpm/pool.d/www.disabled
   when: disable_default_pool
   notify: reload php-fpm
+
+- name: PHP configuration file
+  template:
+    src: php.ini.j2
+    dest: /etc/php/7.0/fpm/php.ini
+  notify: reload php-fpm
