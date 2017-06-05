@@ -149,7 +149,6 @@ small{
   footer section:nth-of-type(4){
     height: auto;
     width: 100%;
-    padding: 50px 0px 0px 60px;
   }
   footer section small{
     display: block;
@@ -189,7 +188,6 @@ small{
   }
   footer section:first-child{
     width: 100%;
-    height: auto;
   }
   footer h2{
     font-size: 1.6rem;
@@ -202,29 +200,27 @@ small{
     display: block;
   }
   footer section:nth-of-type(2){
-    height: auto;
     padding-top: 40px;
     text-align: left;
   }
   footer section:nth-of-type(2) ul{
-    width: 80%;
+    width: 100%;
     text-align: left;
   }
   footer section:nth-of-type(2) ul li{
     font-size: 1.3rem;
+    margin: 0;
     padding-top: 5px;
   }
   footer section:nth-of-type(3){
     text-align: left;
-    height: auto;
     padding-top: 40px;
   }
   footer section:nth-of-type(3) h2{
     transform: translate(20%, 0%);
   }
   footer section:nth-of-type(3) ul a{
-    width: 40%;
-    height: auto;
+    width: 100%;
     display: block;
     transform: translate(50%, 0%);
   }
@@ -239,12 +235,11 @@ small{
     position: relative;
     height: auto;
     width: 100%;
-    padding: 50px 0px 0px 40px;
+    padding-top: 45px;
   }
   footer section small{
     display: block;
-    width: 50%;
-    position: absolute;
+    width: 100%;
     bottom: 20px;
     text-align: center;
     float: left;
@@ -253,13 +248,12 @@ small{
   }
   footer section:nth-of-type(4) .social{
     padding: 0px;
-    width: 50%;
-    float: right;
+    width: 100%;
   }
   .social a{
     display: block;
     width: 33.33%;
-    margin: 15px;
+    margin: 7.5px;
     text-align: center;
     float: left;
     margin: 0 auto;
