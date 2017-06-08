@@ -1,22 +1,20 @@
 header{
   display: block;
-  padding: 30px;
+  padding: 30px 60px;
   background: linear-gradient(to right, rgba(128,202,165,1), rgba(170,223,241,1));
 }
-header img{
+header div img{
   display: block;
   height: 100px;
   float: left;
 }
-header nav ul{
-  padding-top: 20px;
-}
+
 header nav ul li{
   float: right;
   color: $white;
   font-family: $rob-sec;
   font-size: $f-size;
-  margin-right: 60px;
+  margin: 30px 60px 0 60px;
   font-weight: bold;
 }
 

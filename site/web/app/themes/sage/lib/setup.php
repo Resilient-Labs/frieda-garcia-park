@@ -86,10 +86,8 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
-    is_page_template('templates/template-about.php'),
-    is_page_template('templates/template-blog-page.php'),
     is_page_template('templates/template-host-event.php'),
-    is_page_template('templates/template-park-history.php')
+    is_page_template('templates/template-home.php')
   ]);
   return apply_filters('sage/display_sidebar', $display);
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Park History Template
+ * Template Name: Home Template
  */
 ?>
   <section class="hero banner">

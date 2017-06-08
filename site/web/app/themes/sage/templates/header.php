@@ -1,5 +1,8 @@
 <header class="clearfix">
-  <a href="http://frieda-garcia-park.dev"><img src="<?php bloginfo('template_directory');?>/assets/images/logo.png" alt="ffgp"/></a>
+  <a href="<?php echo home_url();?>">
+    <div>
+    <img src="<?php bloginfo('template_directory');?>/assets/images/logo.png" alt="ffgp"/>
+  </div></a>
   <nav class="nav-mobile clearfix">
     <?php wp_nav_menu(); ?>
   </nav>

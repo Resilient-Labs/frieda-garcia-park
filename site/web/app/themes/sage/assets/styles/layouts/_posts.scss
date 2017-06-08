@@ -4,6 +4,7 @@
 section.blog-post-row {
   float: left;
   clear: both;
+  margin: 30px;
   margin-top: 45px;
   padding: 15px;
   width: 75%;
@@ -25,10 +26,10 @@ section.blog-post-row article .content {
 }
 section.blog-post-row article .content h2{
     margin: 0;
-    font-size: $h-size * 1.5;
+    font-size: $h-size;
   }
 section.blog-post-row article .content p{
-    font-size: $f-size * .7;
+    font-size: $f-size;
   }
   /*-----------------------------------
   # Blog Post
@@ -49,7 +50,7 @@ section.blog-post-row article .content p{
     width: 100%;
   }
   .hero.banner h3{
-      font-size: $h-size * 1.3;
+      font-size: $h-size;
     }
   .single-blog-post-content {
     display: block;
