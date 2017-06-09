@@ -3,11 +3,10 @@
 ------------------------------------*/
 section.blog-post-row {
   float: left;
-  clear: both;
   margin: 30px;
   margin-top: 45px;
   padding: 15px;
-  width: 75%;
+  width: 50%;
 }
 section.blog-post-row .img-wrap {
   float: left;
@@ -55,37 +54,27 @@ section.blog-post-row article .content p{
   .single-blog-post-content {
     display: block;
     font-size: $f-size;
-    margin: 30px auto;
-    position: relative;
-    width: 100%;
+    margin: 30px;
+    width: 90%;
   }
   .single-blog-post-content>article {
     border: 1px solid $pink;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     padding: 15px 60px;
     text-align: left;
   }
   .single-blog-post-content section p {
     display: block;
     font-size: 16px;
-    width: 100%;
   }
   .single-blog-post-content .btn {
-    background: rgba(247,165,170,1);
-    color: white;
-    display: block;
-    font-size: 16px;
-    height: 40px;
-    line-height: 40px; /* match line height to height to center vertically */
-    margin: 30px 0;
-    text-align: center;
-    text-decoration: none;
-  }
-  .single-blog-post-content .btn button{
     background: $pink;
     color: $white;
-    display: block;
+    font-size: 16px;
+    margin: 15px 0;
+    text-align: center;
+    text-decoration: none;
   }
   .single-blog-post-content img {
     display: inline-block;

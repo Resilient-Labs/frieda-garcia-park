@@ -74,6 +74,7 @@ section.container-about:nth-of-type(2n+1) aside {
 .row .content {
   display: inline-block;
   float: left;
+  padding: 60px;
   width: 50%;
 }
 .row .media {
@@ -151,12 +152,12 @@ section.container-about:nth-of-type(2n+1) aside {
   padding: 15px;
 }
 .home.row .content h2{
-    font-size: $h-size * 1.7;
+    font-size: $h-size;
   }
 .home.row .content:nth-of-type(2n) {
   display: inline-block;
   float: right;
-  padding: 15px;
+  padding: 60px;
   width: 45%;
 }
 .home.row .media {

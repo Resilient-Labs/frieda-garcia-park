@@ -1,0 +1,37 @@
+.blog-sidebar{
+  display: block;
+  margin: 45px;
+}
+
+.blog-sidebar strong{
+  display: block;
+  font-size: $h-size * 1.5;
+}
+
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1200px) {
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 992px)  {
+
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  .blog-sidebar{
+    display: none;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  .blog-sidebar{
+    display: none;
+  }
+}

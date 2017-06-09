@@ -26,10 +26,6 @@
 ## Tablets, Small Devices
 ------------------------------------*/
 @media only screen and (max-width : 768px)  {
-  .ad {
-    display: none;
-  }
-
   .blog-post-row {
     width: 100%;
   }
@@ -38,9 +34,6 @@
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
-  .ad{
-    display: none;
-  }
   .blog-post-row {
     width: 100%;
   }
@@ -53,7 +46,4 @@
   .blog-post-row .media {
     display: none;
   }
-  /*.blog-post-row .thumbnail  {*/
-    /*display: none;*/
-  /*}*/
 }

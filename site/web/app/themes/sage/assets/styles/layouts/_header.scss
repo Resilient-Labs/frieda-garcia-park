@@ -1,9 +1,9 @@
 header{
   display: block;
-  padding: 30px 60px;
+  padding: 15px 60px;
   background: linear-gradient(to right, rgba(128,202,165,1), rgba(170,223,241,1));
 }
-header div img{
+header a img{
   display: block;
   height: 100px;
   float: left;
@@ -14,7 +14,7 @@ header nav ul li{
   color: $white;
   font-family: $rob-sec;
   font-size: $f-size;
-  margin: 30px 60px 0 60px;
+  margin: 30px 60px 30px 60px;
   font-weight: bold;
 }
 

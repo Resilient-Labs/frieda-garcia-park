@@ -25,9 +25,7 @@ footer section a button{
   font-size: $f-size;
   font-weight: bolder;
 }
-a:hover, button:hover{
-  color: $pink;
-}
+
 footer section ul{
   list-style-type: none;
 }
@@ -37,16 +35,16 @@ footer section ul li{
 footer section:last-of-type{
   width: 100%;
 }
-small{
+footer small{
   display: block;
   float: left;
   width: 50%;
 }
-.social{
+footer .social{
   width: 50%;
   padding: 0px 0px 0px 400px;
 }
-.fa{
+footer .fa{
   color: white;
   margin-left: 20px;
 }
@@ -76,7 +74,7 @@ small{
     width: 50%;
     float: left;
   }
-  .social a{
+  footer .social a{
     display: block;
     width: 33.33%;
     padding: 0px;
@@ -84,7 +82,7 @@ small{
     float: left;
     margin: 0 auto;
   }
-  .fa{
+  footer .fa{
     margin-left: 0px;
     width: 100%;
     font-size: 1rem;
@@ -163,7 +161,7 @@ small{
     width: 50%;
     float: right;
   }
-  .social a{
+  footer .social a{
     display: block;
     width: 33.33%;
     padding: 20px;
@@ -171,7 +169,7 @@ small{
     float: left;
     margin: 0 auto;
   }
-  .fa{
+  footer .fa{
     margin-left: 0px;
     width: 100%;
     font-size: 1rem;
@@ -250,7 +248,7 @@ small{
     padding: 0px;
     width: 100%;
   }
-  .social a{
+  footer .social a{
     display: block;
     width: 33.33%;
     margin: 7.5px;
@@ -258,7 +256,7 @@ small{
     float: left;
     margin: 0 auto;
   }
-  .fa{
+  footer .fa{
     margin-left: 0px;
     width: 100%;
     font-size: 1rem;
@@ -353,7 +351,7 @@ small{
     width: 100%;
     margin-bottom: 37px;
   }
-  .fa{
+  footer .fa{
     display: block;
     width: 100%;
     padding: 0px;
