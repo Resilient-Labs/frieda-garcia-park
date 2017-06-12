@@ -1,6 +1,7 @@
 .blog-sidebar{
-  display: block;
-  margin: 45px;
+  float: right;
+  display: inline-block;
+  width: calc(30% - 15px);
 }
 
 .blog-sidebar strong{
@@ -32,6 +33,6 @@
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
   .blog-sidebar{
-    display: none;
+    display: block;
   }
 }

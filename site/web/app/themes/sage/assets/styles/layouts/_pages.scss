@@ -74,20 +74,21 @@ section.container-about:nth-of-type(2n+1) aside {
 .row .content {
   display: inline-block;
   float: left;
-  padding: 60px;
-  width: 50%;
+  padding: 15px;
+  width: calc(50% - 15px);
 }
 .row .media {
   display: inline-block;
   float: left;
-  width: 50%;
+  width: calc(50% - 15px);
 }
 .row .media figure img {
-  margin: -15px 0 15px 15px;
+  top: -15px;
+  left: 15px;
   width: 100%;
 }
 .row .media figure.media-bg {
-  background: rgba(128,202,165,1);
+  background: $sea-green;
 }
 .row .host-event-card {
   float: left;
@@ -141,7 +142,6 @@ section.container-about:nth-of-type(2n+1) aside {
   display: block;
   float: left;
   padding: 60px;
-  margin: 30px;
 }
 .home.row:nth-of-type(odd) .media {
   float: right;
@@ -149,22 +149,19 @@ section.container-about:nth-of-type(2n+1) aside {
 .home.row .content {
   float: left;
   margin: 0 auto;
-  padding: 15px;
+  padding: 60px;
 }
 .home.row .content h2{
-    font-size: $h-size;
+    font-size: $h-size * 1.5;
   }
 .home.row .content:nth-of-type(2n) {
   display: inline-block;
   float: right;
-  padding: 60px;
-  width: 45%;
 }
 .home.row .media {
   display: inline-block;
   float: left;
   margin: 0;
-  width: 45%;
 }
 .home.row:nth-of-type(2) .media {
   border: 1px solid rgba(128,202,165,1);
@@ -176,17 +173,8 @@ section.container-about:nth-of-type(2n+1) aside {
   border: 1px solid rgba(247,166,170,1);
 }
 .home.row .media img {
-  position: relative;
   top: -30px;
   left: -30px;
-  height: 100%;
-  width: 100%;
-}
-.home.row .media img(even) {
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  height: 100%;
   width: 100%;
 }
 .home.row .content a {
@@ -198,19 +186,20 @@ section.container-about:nth-of-type(2n+1) aside {
   width: 200px;
 }
 .home.row:nth-of-type(2) .content a {
-  background: rgba(128,202,165,1);
+  background: $sea-green;
+
 }
 .home.row:nth-of-type(2) .content h2 {
   color: $sea-green;
 }
 .home.row:nth-of-type(3) .content a  {
-  background: rgba(170,223,241,1);
+  background: $baby-blue;
 }
 .home.row:nth-of-type(3) .content h2 {
   color: $baby-blue;
 }
 .home.row:nth-of-type(4) .content a  {
-  background: rgba(247,165,170,1);
+  background: $pink;
 }
 .home.row:nth-of-type(4) .content h2 {
   color: $pink;

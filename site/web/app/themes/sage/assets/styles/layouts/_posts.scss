@@ -1,12 +1,15 @@
 /*-----------------------------------
 # Blog Page
 ------------------------------------*/
+section.blog-page-posts{
+  display: inline-block;
+  width: calc(70% - 15px);
+}
 section.blog-post-row {
   float: left;
   margin: 30px;
   margin-top: 45px;
-  padding: 15px;
-  width: 50%;
+  width: 100%;
 }
 section.blog-post-row .img-wrap {
   float: left;
@@ -19,16 +22,16 @@ section.blog-post-row .img-wrap img {
   width: 100%;
 }
 section.blog-post-row article .content {
-  float: left;
+  display: inline-block;
   margin-left: 15px;
-  width: 70%;
+  width: calc(70% - 30px);
 }
 section.blog-post-row article .content h2{
-    margin: 0;
-    font-size: $h-size;
+  margin: 0;
+  font-size: $h-size;
   }
 section.blog-post-row article .content p{
-    font-size: $f-size;
+  font-size: $f-size;
   }
   /*-----------------------------------
   # Blog Post
@@ -54,7 +57,7 @@ section.blog-post-row article .content p{
   .single-blog-post-content {
     display: block;
     font-size: $f-size;
-    margin: 30px;
+    margin: 30px auto;
     width: 90%;
   }
   .single-blog-post-content>article {
@@ -81,4 +84,37 @@ section.blog-post-row article .content p{
     float: left;
     padding: 15px;
     width: 50%;
+  }
+
+  /*-----------------------------------
+  ## Wide Screens, Large Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 1200px) {
+    .hero.banner {
+
+    }
+  }
+  /*-----------------------------------
+  ## Desktops, Medium Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 992px)  {
+    .hero.banner {
+      height: 400px;
+    }
+  }
+  /*-----------------------------------
+  ## Tablets, Small Devices
+  ------------------------------------*/
+  @media only screen and (max-width : 768px)  {
+    .hero.banner {
+      height: 360px;
+    }
+  }
+  /*-----------------------------------
+  ## Phones, Extra Small Devices
+  ------------------------------------*/
+  @media only screen and (max-width: 480px) {
+    .hero.banner {
+      height: 280px;
+    }
   }
