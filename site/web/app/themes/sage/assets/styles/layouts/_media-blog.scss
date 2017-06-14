@@ -1,4 +1,3 @@
-
 /*-----------------------------------
 ## Wide Screens, Large Devices
 ------------------------------------*/
@@ -9,13 +8,20 @@
 ## Desktops, Medium Devices
 ------------------------------------*/
 @media only screen and (max-width : 992px)  {
-  .blog-post-row{
+  section.blog-page-posts{
     width: 100%;
   }
-  .blog-post-row .content {
+  section.blog-post-row{
     width: 100%;
   }
-  .blog-post-row .media {
+  section.blog-post-row .img-wrap {
+    display: block;
+  }
+  section.blog-post-row .content {
+    clear: left;
+    width: 100%;
+  }
+  section.blog-post-row .media {
     width: 33%;
   }
 }

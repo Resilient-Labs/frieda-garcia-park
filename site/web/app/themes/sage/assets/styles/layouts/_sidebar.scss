@@ -9,6 +9,10 @@
   font-size: $h-size * 1.5;
   margin-bottom: 15px;
 }
+
+.blog-sidebar iframe {
+  width: 100%;
+}
 /*-----------------------------------
 ## Wide Screens, Large Devices
 ------------------------------------*/
@@ -33,6 +37,10 @@
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
   .blog-sidebar{
+    float: none;
     display: block;
+  }
+  .blog-sidebar strong{
+    text-align: center;
   }
 }
