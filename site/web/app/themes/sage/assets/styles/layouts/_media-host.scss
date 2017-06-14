@@ -21,8 +21,11 @@
   .row .content, .row .media {
     width: 100%;
   }
+  .row .media {
+    padding: 15px;
+  }
   .row .host-event-card {
-    width: 50%;
+    width: calc(50% - 15px);
   }
 }
 /*-----------------------------------
@@ -36,6 +39,6 @@
     width: 100%;
   }
   .row .host-event-card {
-    width: 100%;
+    width: calc(100% - 15px);
   }
 }

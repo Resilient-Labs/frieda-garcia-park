@@ -9,7 +9,7 @@
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
-    <a class="btn" href="#">
+    <a class="btn" href="<?php echo home_url();?>/blog">
         <i class="fa fa-long-arrow-left"></i> Back to Blog
     </a>
   </article>

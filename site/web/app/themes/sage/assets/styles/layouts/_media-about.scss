@@ -32,8 +32,14 @@
     top: 0;
     width: 100%;
   }*/
-  section.container-about aside{
-    display: none;
+  section.container-about aside,
+  section.container-about:nth-of-type(odd) aside {
+    display: block;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    position: relative;
   }
   section.container-about article {
     padding: 0;
@@ -47,9 +53,6 @@
   section.container-about {
     max-width: calc(100% - 20px);
     padding: 15px;
-  }
-  section.container-about aside {
-    display: none;
   }
   section.container-about article {
     padding: 15px;

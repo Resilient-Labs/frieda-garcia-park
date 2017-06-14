@@ -1,14 +1,14 @@
 .blog-sidebar{
-  float: right;
   display: inline-block;
+  float: right;
+  margin: 15px;
   width: calc(30% - 15px);
 }
-
 .blog-sidebar strong{
   display: block;
   font-size: $h-size * 1.5;
+  margin-bottom: 15px;
 }
-
 /*-----------------------------------
 ## Wide Screens, Large Devices
 ------------------------------------*/

@@ -7,7 +7,7 @@ section.blog-page-posts{
 }
 section.blog-post-row {
   float: left;
-  margin: 30px;
+  margin: 60px;
   margin-top: 45px;
   width: 100%;
 }
@@ -58,16 +58,17 @@ section.blog-post-row article .content p{
     display: block;
     font-size: $f-size;
     margin: 30px auto;
-    width: 90%;
   }
   .single-blog-post-content>article {
     border: 1px solid $pink;
     margin: 0 auto;
-    width: 90%;
+    max-width: 1366px;
+    width: calc(100% - 60px);
     padding: 15px 60px;
     text-align: left;
   }
-  .single-blog-post-content section p {
+  .single-blog-post-content div p {
+    clear: both;
     display: block;
     font-size: 16px;
   }
