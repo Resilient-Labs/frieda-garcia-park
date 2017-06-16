@@ -34,6 +34,9 @@ header nav div .menu {
 header nav .hamburger-menu, header .hamburger-nav {
   display: none;
 }
+.hidden-overflow {
+  overflow: hidden;
+}
 /*-----------------------------------
 # Media Queries
 ------------------------------------*/
@@ -115,7 +118,7 @@ header nav .hamburger-menu, header .hamburger-nav {
   }
   header .hamburger-nav ul li {
     color: $white;
-    font-size: 3em;
+    font-size: 2.5em;
     height: 25%;
     text-align: center;
   }

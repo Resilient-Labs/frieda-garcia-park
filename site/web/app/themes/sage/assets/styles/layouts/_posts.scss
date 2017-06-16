@@ -1,12 +1,21 @@
 /*-----------------------------------
 # Blog Page
 ------------------------------------*/
+/*.no-js .lazy {
+ display: none;
+}
+img:not([src]):not([srcset]) {
+ visibility: hidden;
+}*/
 section.blog-page-posts{
   display: inline-block;
   width: calc(70% - 15px);
 }
 section.blog-post-row {
-  margin: 60px;
+  clear: both;
+  display: block;
+  float: left;
+  margin: 30px;
   margin-top: 45px;
   width: 100%;
 }
@@ -20,10 +29,15 @@ section.blog-post-row .img-wrap img {
   left: -15px;
   width: 100%;
 }
-section.blog-post-row article .content {
+section.blog-post-row article {
   display: inline-block;
-  margin-left: 15px;
-  width: calc(70% - 30px);
+  float: left;
+  padding: 0 15px;
+  width: calc(70% - 15px);
+}
+section.blog-post-row article .content {
+  display: block;
+  width: 100%;
 }
 section.blog-post-row article .content h2{
   margin: 0;
@@ -63,7 +77,7 @@ section.blog-post-row article .content p{
     margin: 0 auto;
     max-width: 1366px;
     width: calc(100% - 60px);
-    padding: 15px 60px;
+    padding: 30px;
     text-align: left;
   }
   .single-blog-post-content div p {
@@ -85,13 +99,12 @@ section.blog-post-row article .content p{
     padding: 15px;
     width: 50%;
   }
-
   /*-----------------------------------
   ## Wide Screens, Large Devices
   ------------------------------------*/
   @media only screen and (max-width : 1200px) {
-    .hero.banner {
-
+    .middle section, .single-blog-post-content section {
+      margin: 30px;
     }
   }
   /*-----------------------------------
@@ -101,13 +114,70 @@ section.blog-post-row article .content p{
     .hero.banner {
       height: 400px;
     }
+    .mainImg {
+      height: 400px;
+    }
+    .middle section, .single-blog-post-content section {
+      margin: 30px;
+      padding: 30px;
+    }
+    section.blog-page-posts{
+      display: block;
+      padding: 15px;
+      width: 100%;
+    }
+    section.blog-post-row {
+      clear: none;
+      display: inline-block;
+      margin: 15px auto;
+      padding: 15px 30px;
+      width: calc(50% - 15px);
+    }
+    section.blog-post-row article {
+      padding: 0;
+      width: 100%;
+    }
+    section.blog-post-row .img-wrap {
+      display: block;
+      margin: 15px auto;
+      width: 100%;
+    }
+    section.blog-post-row .content {
+      clear: left;
+      width: 100%;
+    }
+    section.blog-post-row .media {
+      width: 33%;
+    }
   }
-  /*-----------------------------------
+  /*------------------------------------
   ## Tablets, Small Devices
   ------------------------------------*/
   @media only screen and (max-width : 768px)  {
     .hero.banner {
       height: 360px;
+    }
+    .mainImg {
+      height: 320px;
+    }
+    .mainTitle, .mainImg h2 {
+      top: 25%;
+    }
+    .middle section, .single-blog-post-content section {
+      margin: 15px;
+      padding: 15px;
+    }
+    .single-blog-post-content img {
+      margin: 15px auto;
+      padding: 0;
+      width: 100%;
+    }
+    section.blog-page-posts {
+      display: block;
+      width: 100%
+    }
+    section.blog-post-row {
+      width: calc(100%);
     }
   }
   /*-----------------------------------
@@ -116,5 +186,20 @@ section.blog-post-row article .content p{
   @media only screen and (max-width: 480px) {
     .hero.banner {
       height: 280px;
+    }
+    .mainImg {
+      height: 100%;
+    }
+    .mainTitle, .mainImg h2 {
+      top: 15%;
+    }
+    .single-blog-post-content .middleLink, .single-blog-post-content .btn {
+      margin: 15px auto;
+    }
+    section.blog-post-row .content {
+      width: 100%;
+    }
+    section.blog-post-row .img-wrap {
+      width: 100%;
     }
   }

@@ -25,11 +25,11 @@
   </section>
   <section class="clearfix">
     <small>Friends of Frieda Garcia Park &copy; 2017. All Rights Reserved.
-      Designed by <a href="http://www.muigaiunaka.com" target="_blank">Muigai Unaka</a>. 
+      Designed by <a href="http://www.muigaiunaka.com" target="_blank">Muigai Unaka</a>.
       Built by a <a href="http://www.resilientcoders.org" target="_blank">Resilient Coder</a>.
     </small>
     <section class="social">
-      <a href="https://www.facebook.com/friendsoffriedagarciapark/">
+      <a href="https://www.facebook.com/friendsoffriedagarciapark/" target="_blank">
         <i class="fa fa-facebook fa-2x fLogo" aria-hidden="true"></i>
       </a>
       <a href="#">

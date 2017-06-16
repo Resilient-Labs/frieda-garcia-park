@@ -155,7 +155,6 @@ section.container-about:nth-of-type(2n+1) aside {
 .home.row .content {
   float: left;
   margin: 0 auto;
-  padding: 60px;
 }
 .home.row .content h2{
     font-size: $h-size * 1.5;
@@ -179,8 +178,8 @@ section.container-about:nth-of-type(2n+1) aside {
   border: 1px solid rgba(247,166,170,1);
 }
 .home.row .media img {
-  top: -30px;
-  left: -30px;
+  top: -15px;
+  left: -15px;
   width: 100%;
 }
 .home.row .content a {
@@ -222,6 +221,4 @@ section.container-about:nth-of-type(2n+1) aside {
 ------------------------------------*/
 @import 'media-about';
 @import 'media-p-h';
-@import 'media-blog';
-@import 'media-blog-page';
 @import 'media-host';

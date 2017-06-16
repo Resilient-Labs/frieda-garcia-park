@@ -9,20 +9,31 @@
   font-size: $h-size * 1.5;
   margin-bottom: 15px;
 }
-
-.blog-sidebar iframe {
-  width: 100%;
-}
 /*-----------------------------------
 ## Wide Screens, Large Devices
 ------------------------------------*/
 @media only screen and (max-width : 1200px) {
+
 }
 /*-----------------------------------
 ## Desktops, Medium Devices
 ------------------------------------*/
 @media only screen and (max-width : 992px)  {
-
+  .blog-sidebar{
+    display: block;
+    float: none;
+    padding: 15px;
+    width: 100%;
+  }
+  .blog-sidebar iframe {
+    margin: 0 auto;
+  }
+  .blog-sidebar{
+    display: block;
+    float: left;
+    padding: 15px;
+    width: calc(50% - 15px);
+  }
 }
 /*-----------------------------------
 ## Tablets, Small Devices
@@ -36,11 +47,13 @@
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
-  .blog-sidebar{
-    float: none;
-    display: block;
-  }
-  .blog-sidebar strong{
-    text-align: center;
-  }
+  // .blog-sidebar{
+  //   display: block;
+  //   float: left;
+  //   padding: 15px;
+  //   width: calc(100% - 15px);
+  // }
+  // .blog-sidebar strong{
+  //   text-align: left;
+  // }
 }
