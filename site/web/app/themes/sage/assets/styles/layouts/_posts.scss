@@ -1,12 +1,6 @@
 /*-----------------------------------
 # Blog Page
 ------------------------------------*/
-/*.no-js .lazy {
- display: none;
-}
-img:not([src]):not([srcset]) {
- visibility: hidden;
-}*/
 section.blog-page-posts{
   display: inline-block;
   width: calc(70% - 15px);

@@ -16,7 +16,11 @@ button{
   text-align: left;
   text-decoration: none;
   text-indent: 0;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
 }
  button:hover{
    color: $pink;
+   -webkit-transition: all .3s ease;
+   -moz-transition: all .3s ease;
  }

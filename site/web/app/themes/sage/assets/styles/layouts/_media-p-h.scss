@@ -3,9 +3,7 @@
 ## Wide Screens, Large Devices
 ------------------------------------*/
 @media only screen and (max-width : 1200px) {
-  .hero.banner {
-    height: 540px;
-  }
+
 }
 /*-----------------------------------
 ## Desktops, Medium Devices
@@ -13,6 +11,9 @@
 @media only screen and (max-width : 992px)  {
   .hero.banner {
     height: 400px;
+  }
+  .hero.banner h3{
+    top: 10%;
   }
 }
 /*-----------------------------------
@@ -26,7 +27,7 @@
     left: 0;
     padding: 30px;
     width: 100%;
-    top: 10%;
+    top: 0;
   }
   .home.row .content {
     padding: 0;
@@ -41,7 +42,7 @@
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
   .hero.banner {
-    height: 240px;
+    height: 266px;
   }
   .hero.banner h3 {
     left: 0;

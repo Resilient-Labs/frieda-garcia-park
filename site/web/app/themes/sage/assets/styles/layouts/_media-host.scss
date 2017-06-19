@@ -19,7 +19,7 @@
     padding: 15px;
   }
   .row .content, .row .media {
-    width: 100%;
+    width: calc(100% - 15px);
   }
   .row .host-event-card {
     width: 50%;
@@ -37,6 +37,6 @@
     width: calc(100% - 15px);
   }
   .row .host-event-card {
-    width: 50%;
+    width: 100%;
   }
 }

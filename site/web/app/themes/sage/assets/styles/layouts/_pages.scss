@@ -124,7 +124,6 @@ section.container-about:nth-of-type(2n+1) aside {
 .hero.banner {
   background: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0, 1));
   height: 480px;
-  margin: 0 auto;
   overflow: hidden;
   padding: 0;
   width: 100%;
@@ -167,6 +166,7 @@ section.container-about:nth-of-type(2n+1) aside {
   display: inline-block;
   float: left;
   margin: 0;
+  padding: 0;
 }
 .home.row:nth-of-type(2) .media {
   border: 1px solid rgba(128,202,165,1);
