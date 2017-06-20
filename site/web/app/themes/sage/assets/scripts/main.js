@@ -75,3 +75,7 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+jQuery(".hamburger-menu").on('click',function() {
+  jQuery(".hamburger-nav").toggle("slow");
+  jQuery("html, body").toggleClass("hidden-overflow");
+})
