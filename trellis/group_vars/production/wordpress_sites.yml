@@ -3,11 +3,11 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  frieda-garcia-park.com:
+  resilient.site:
     site_hosts:
-      - canonical: frieda-garcia-park.com
+      - canonical: resilient.site
         redirects:
-          - www.frieda-garcia-park.com
+          - resilient.site
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:roots/frieda-garcia-park.com.git # replace with your Git repo URL
     repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
