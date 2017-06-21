@@ -1,0 +1,75 @@
+0000.006 () Opened log file at time: Tue, 30 May 2017 19:04:13 +0000 on http://frieda-garcia-park.dev/wp
+0000.007 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.13.1.1 WP: 4.6.1 PHP: 7.0.19-1+deb.sury.org~xenial+1 (fpm-fcgi, Linux frieda-garcia-park 4.4.0-66-generic #87-Ubuntu SMP Fri Mar 3 15:29:05 UTC 2017 x86_64) MySQL: 5.5.5 WPLANG: en_US Server: nginx/1.11.9 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 24.8M | 2M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.007 () Free space on disk containing Updraft's temporary directory: 206757.2 MB
+0000.009 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":false,"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false}
+0000.072 () Entity: db
+0000.072 () restore_backup(backup_file=backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-db.gz, type=db, info=a:0:{}, last_one=)
+0000.072 () Unpacking backup... (backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-db.gz, 0.2 Mb)
+0000.087 () Database successfully unpacked
+0000.089 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.090 () Using direct MySQL access; value of use_mysqli is: 1
+0000.103 () Tried to raise max_allowed_packet from 1 MB to 32 MB, but failed (Access denied; you need (at least one of) the SUPER privilege(s) for this operation, b:0;)
+0000.103 () Max packet size: 1 MB
+0000.103 () Entering maintenance mode
+0000.103 () Enabling Maintenance mode&#8230;
+0000.106 () Backup of: http://frieda-garcia-park.dev/wp
+0000.107 () Site home: http://frieda-garcia-park.dev
+0000.107 () Content URL: http://frieda-garcia-park.dev/app
+0000.107 () Uploads URL: http://frieda-garcia-park.dev/app/uploads
+0000.107 () Old table prefix: wp_
+0000.107 () Site information: multisite=0
+0000.108 () New table prefix: wp_
+0000.112 () Processing table (InnoDB): wp_options
+0000.213 () Restoring prior UD configuration (table: wp_options; keys: 3)
+0000.221 () Processing table (InnoDB): wp_users
+0000.233 () Processing table (InnoDB): wp_usermeta
+0000.244 () Processing table (InnoDB): wp_commentmeta
+0000.255 () Processing table (InnoDB): wp_comments
+0000.270 () Processing table (InnoDB): wp_links
+0000.280 () Processing table (InnoDB): wp_postmeta
+0000.331 () Processing table (InnoDB): wp_posts
+0000.354 () Processing table (InnoDB): wp_term_relationships
+0000.366 () Processing table (InnoDB): wp_term_taxonomy
+0000.378 () Processing table (InnoDB): wp_termmeta
+0000.388 () Processing table (InnoDB): wp_terms
+0000.398 () Unlocking database and leaving maintenance mode
+0000.398 () Disabling Maintenance mode&#8230;
+0000.399 () Finished: lines processed: 42 in 0.31 seconds
+0000.399 () Cleaning up rubbish...
+0000.400 () Begin search and replace (updraftplus_restored_db)
+0000.400 () [Database-replace-site-url] Database: search and replace site URL
+0000.400 () This option was not selected.
+0000.404 () Entity: plugins
+0000.404 () restore_backup(backup_file=backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:55:"/srv/www/frieda-garcia-park.com/current/web/app/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0000.404 () Unpacking backup... (backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-plugins.zip, 12.8 Mb)
+0007.707 () Moving old data: filesystem method / updraft_dir is potentially possible
+0007.708 () Moving old data: can potentially use wp_filesystem method / -old
+0007.708 () Moving old data out of the way...
+0009.941 () Top-level entities being moved: .gitkeep, advanced-custom-fields, disable-comments, github-updater-6.3.1, google-analytics-dashboard-for-wp, post-types-order, soil, sucuri-scanner, tinymce-advanced, updraftplus, w3-total-cache, wordpress-importer, wordpress-seo, wp-sync-db, wp-sync-db-media-files
+0009.958 () Moving unpacked backup into place...
+0011.934 () Top-level entities being moved: .gitkeep, advanced-custom-fields, disable-comments, github-updater-6.3.1, google-analytics-dashboard-for-wp, post-types-order, soil, sucuri-scanner, tinymce-advanced, updraftplus, w3-total-cache, wordpress-importer, wordpress-seo, wp-sync-db, wp-sync-db-media-files
+0011.948 () Cleaning up rubbish...
+0011.951 () Entity: themes
+0011.952 () restore_backup(backup_file=backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-themes.zip, type=themes, info=a:2:{s:4:"path";s:54:"/srv/www/frieda-garcia-park.com/current/web/app/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0011.952 () Unpacking backup... (backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-themes.zip, 30.5 Mb)
+0042.123 () Moving old data: filesystem method / updraft_dir is potentially possible
+0042.124 () Moving old data: can potentially use wp_filesystem method / -old
+0042.125 () Moving old data out of the way...
+0051.030 () Top-level entities being moved: .DS_Store, .gitkeep, sage
+0051.036 () Moving unpacked backup into place...
+0061.848 () Top-level entities being moved: .DS_Store, .gitkeep, sage
+0061.859 () Cleaning up rubbish...
+0061.866 () Entity: uploads
+0061.866 () restore_backup(backup_file=backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:55:"/srv/www/frieda-garcia-park.com/current/web/app/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0061.866 () Unpacking backup... (backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-uploads.zip, 11 Mb)
+0062.573 () Moving old data: filesystem method / updraft_dir is potentially possible
+0062.575 () Moving old data: can potentially use wp_filesystem method / -old
+0062.575 () Moving old data out of the way...
+0062.611 () Moving unpacked backup into place...
+0062.651 () Cleaning up rubbish...
+0062.655 () Entity: others
+0062.655 () restore_backup(backup_file=backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-others.zip, type=others, info=a:2:{s:4:"path";s:47:"/srv/www/frieda-garcia-park.com/current/web/app";s:11:"description";s:6:"Others";}, last_one=1)
+0062.656 () Unpacking backup... (backup_2017-05-26-1453_friedagarciaparkcom_e2325c57f43d-others.zip, 0 Mb)
+0062.692 () Cleaning up rubbish...
+0062.711 () Restore successful!
+0062.712 () Restore successful

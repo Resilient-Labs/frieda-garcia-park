@@ -28,15 +28,3 @@
       </blockquote>
     </aside>
   </section>
-  <section class="container-about clearfix">
-    <article>
-      <h2><?php echo get_field('about-bottom-title'); ?></h2>
-      <?php echo get_field('about-bottom-body'); ?>
-    </article>
-    <aside>
-      <img src="<?php echo get_field('about-bottom-image'); ?>"/>
-      <blockquote>
-        <span>&ldquo;</span><?php echo get_field('about-bottom-quote'); ?>&rdquo;
-      </blockquote>
-    </aside>
-  </section>
