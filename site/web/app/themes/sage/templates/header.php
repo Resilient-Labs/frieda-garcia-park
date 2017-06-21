@@ -1,12 +1,17 @@
-<header class="banner">
-  <div class="container">
-  <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="images/logo.png" alt="Logo"></a>
-    <nav class="nav-primary">
-      <?php
-      if (has_nav_menu('primary_navigation')) :
-        wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-      endif;
-      ?>
-    </nav>
+<header class="clearfix">
+  <nav class="clearfix">
+    <a href="<?php echo home_url();?>" class="logo">
+      <img src="<?php bloginfo('template_directory');?>/assets/images/logo.png" alt="ffgp-logo"/>
+    </a>
+    <?php wp_nav_menu(); ?>
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="hamburger-nav">
+    <?php wp_nav_menu(); ?>
   </div>
 </header>

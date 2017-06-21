@@ -1,24 +1,24 @@
 # Documentation: https://roots.io/trellis/docs/vault/
-vault_mysql_root_password: B3LkKUpcZVx4bpLXKXpiez%R
+vault_mysql_root_password: "D6N*LF#HFVztU!M^rhM$2U7#"
 
 # Documentation: https://roots.io/trellis/docs/security/
 vault_users:
   - name: "{{ admin_user }}"
-    password: example_password
-    salt: "generateme"
+    password: "_SVYP&PC$_&?HYFvYW4msmzp"
+    salt: "L-NX^?ymMR6f2GDA"
 
 # Variables to accompany `group_vars/production/wordpress_sites.yml`
 # Note: the site name (`example.com`) must match up with the site name in the above file.
 vault_wordpress_sites:
-  frieda-garcia-park.com:
+  resilient.site:
     env:
-      db_password: example_dbpassword
+      db_password: "=vMghFF+#$cQxS=eH9jHH5Hg"
       # Generate your keys here: https://roots.io/salts.html
-      auth_key: "xi*j4w}!`W]CQ631Muy5B&>^/kr1l`<Tv5$[4-uK1Xq^i7R7:|t.=O=dR}x(xYu_"
-      secure_auth_key: "+<#]lvyFoi8Y^<.e?KU!w,[%GZ)WSU$2,qyhx}uQOblplZ,:QB6)Rl,i^y)Uz]nz"
-      logged_in_key: "5P{H?*yFxod@yWD$0BxgE_j?;:hTO{-&$+-55VT_^H+[@^lmGvl3g$BWyQ3l/GCX"
-      nonce_key: "t:Ty$Nz,qnt^)h_KNPu^_)EZAYdL.P@|jPo]z@NA]q+%s]1nk>DduDk!:Zbhv]HE"
-      auth_salt: "#P>wj1G&mn`]uOEgujE?9=m>@+9,yLrK?BViP:h]^qYZ[&PogcJbYce(`;R@zI_%"
-      secure_auth_salt: ">jny;[kr|SsdGzsT]ywS{X6`%r/!XMf4%Jk3U9@awfhNK%We)};Zbg^HAH0-5Ywz"
-      logged_in_salt: "L!XSv5wO>T?/F&{n7I36gNzymQ><u7xCX,#|v74jt9O(T>0Xa_a#CoKt(gtNc{V}"
-      nonce_salt: "yE,GqLcM>]yG0xrJn]..KZe-,ktlLETs%fcHzBEH^`wFT!7]$#y5_IlL86Tq,y<1"
+      auth_key: "@l{j-[[hCD1EZgYXz,e1?L6r+sfz)byafcD5P]NeK$X2RmpY&r77Cr,QGLbds,j%"
+      secure_auth_key: "[59&_eKpU4=|cj@<d(HB!]OUV15%U]Y6Y**?jM8D_+%Jef6nm=Hu!k4Zi3C@GR=E"
+      logged_in_key: "4P)|M]laTr.+E6]>g#l&j0sB6O4M}pm!Ml`f)cUGUDW^k:@%uMjNJGn$gB*jn,B,"
+      nonce_key: "4#_z)07n{qL(Mbw%g&|0QW_K7W@SwSmw2!<4)-t-ol>kjw69lg7Dj:UF!Z^^_(q>"
+      auth_salt: "zIF{66x2RW7!%f}^hTe6]0TLZL{doMR%Gq/;R8sa59@y}6yB/s7W!T07Y*>ByOrZ"
+      secure_auth_salt: "A#xr=?z,G<Lr?PEw/@SPkehRsy0Rq5&<$UTc0;G%]hZS?9tKeS0Oq}NL_v4^z-/f"
+      logged_in_salt: "ty!nduCIkhqu5a3(|m?/wKMJuLfo.}QZ!<-0^((8H^xzc}M09EK64Ki$?!}GYxN:"
+      nonce_salt: "s1/}JJ,$j|Q8vbnC>q0t[IQNNW5ga(wivUCIw2n,lh9nX0^u9g(*8IBRH8Q,bmxa"

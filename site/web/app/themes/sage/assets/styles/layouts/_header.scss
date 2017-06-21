@@ -1,70 +1,41 @@
-/*HEADER*/
 header{
-  width: 100%;
-  height: 130px;
-  padding: 0;
-  margin: 0 auto;
+  display: block;
+  padding: 15px 30px;
   background: linear-gradient(to right, rgba(128,202,165,1), rgba(170,223,241,1));
 }
-/*LOGO*/
-header figure{
-  height: 150px;
-  width: 30%;
-  margin: 0px;
+header nav .logo {
+  display: inline-block;
   float: left;
-  /*background: url(logo.png);
-  background-size: 48%;
-  background-repeat: no-repeat;
-  background-position: 100px 50px;*/
 }
-header figure img{
-  height: 90px;
-  width: 50%;
-  margin: 40px 0px 0px 100px;
-}
-/*NAVIGATION*/
-header nav{
-  width: 70%;
-  height: 150px;
-  margin: 0px;
-  padding: 0px;
+header nav .menu-menu-1-container {
+  display: inline-block;
   float: right;
-  position: relative;
+}
+header a img{
+  display: block;
+  height: 100px;
+  float: left;
 }
 header nav ul{
-  width: 100%;
-  height: 50px;
+  margin: 0;
+}
+header nav ul li {
+  float: right;
+  color: $white;
+  font-family: $rob-sec;
+  font-size: $f-size;
+  margin: 30px;
+  font-weight: bold;
   text-align: right;
-  margin-top: 40px;
-  padding-top: 15px;
 }
-header nav ul li{
-  font-size: 15rem;
-  display: inline;
-  margin-right: 80px;
+header nav div .menu {
+
 }
-header nav ul li a{
-  color: white;
-  text-decoration: none;
+header nav .hamburger-menu, header .hamburger-nav {
+  display: none;
 }
-.hamburger{
-  position: absolute;
-  left: 830px;
-  top: 53px;
-  border-style: none;
-  background: inherit;
-  color: white;
-  /*display: none;*/
-}
-.cross{
-  position: absolute;
-  left: 830px;
-  top: 53px;
-  border-style: none;
-  background: inherit;
-  font-size: 30px;
-  color: white;
-  /*display: none;*/
+.hidden-overflow {
+  overflow: hidden;
 }
 /*-----------------------------------
 # Media Queries
@@ -73,47 +44,120 @@ header nav ul li a{
 ## Wide Screens, Large Devices
 ------------------------------------*/
 @media only screen and (max-width : 1200px) {
-  header nav{
-    width: 100%;
+  header nav ul li{
+    font-size: $f-size;
   }
-
+  header nav ul li a{
+    color: $white;
+    text-decoration: none;
+  }
 }
 /*-----------------------------------
 ## Desktops, Medium Devices
 ------------------------------------*/
 @media only screen and (max-width : 992px)  {
-  header nav{
-    display: none;
+  header a img {
+    height: 80px;
   }
-  header figure img{
-    width: 100%;
+  header nav ul{
+    float: left;
+  }
+  header nav ul li{
+    display: block;
+    font-size: $f-size;
+    margin: 25px 15px;
+  }
+  header nav ul li a{
+    display: block;
+    color: $white;
+    text-decoration: none;
   }
 }
 /*-----------------------------------
 ## Tablets, Small Devices
 ------------------------------------*/
 @media only screen and (max-width : 768px)  {
-  header nav{
+  header{
+    padding: 15px 20px;
+  }
+  header>img{
+    display: block;
+    margin: 0 auto;
+    float: none;
+    height: 100px;
+  }
+  header nav ul{
+    display: block;
+    float: right;
+    clear: none;
+  }
+  header nav ul li{
+    font-size: $f-size;
+    display: block;
+  }
+  header nav ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  header nav div .menu {
     display: none;
   }
-  header figure img{
+  header nav .hamburger-menu {
+    display: inline-block;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 36px;
+  }
+  header .hamburger-nav {
+    height: calc(100vh - 115px);
+  }
+  header .hamburger-nav ul{
+    height: 100%;
+  }
+  header .hamburger-nav ul li {
+    color: $white;
+    font-size: 2.5em;
+    height: 25%;
+    text-align: center;
+  }
+  header nav .hamburger-menu span{
+    background: $white;
+    display: block;
+    height: 3px;
+    margin: 4px 0;
     width: 100%;
+    z-index: 7;
   }
 }
 /*-----------------------------------
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
-  header nav ul{
+  header>img{
     display: none;
   }
-  header figure{
-    width: 100%;
-    padding: 20px 0px 0px 0px;
+  .list{
+    display: none;
   }
-  header figure img{
+  header nav{
     width: 100%;
+    height: auto;
+    display: relative;
+  }
+  header nav ul{
+    width: 100%;
+    padding: 0px;
+    text-align: center;
     margin: 0px;
-    float: left;
+  }
+  header nav ul li{
+    width: 100%;
+    display: block;
+    padding: 10px;
+  }
+  header nav ul li a{
+    color: black;
   }
 }
