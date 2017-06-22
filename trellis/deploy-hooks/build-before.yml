@@ -17,7 +17,7 @@
     chdir: "{{ project.local_path }}/web/app/themes/sage"
 
 - name: Run gulp
-  command: gulp --production
+  command: gulp
   connection: local
   args:
     chdir: "{{ project.local_path }}/web/app/themes/sage"
