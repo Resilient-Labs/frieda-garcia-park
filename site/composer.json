@@ -49,6 +49,7 @@
     "wpackagist-plugin/w3-total-cache": "^0.9.5.4",
     "wpackagist-plugin/wordpress-importer": "^0.6.3",
     "wpackagist-plugin/wordpress-seo": "^4.7",
+    "wpackagist-plugin/the-events-calendar": "^4.5.9",
     "wp-sync-db/wp-sync-db": "dev-master@dev",
     "wp-sync-db/wp-sync-db-media-files": "dev-master"
   },

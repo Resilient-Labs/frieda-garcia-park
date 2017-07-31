@@ -1,0 +1,53 @@
+0000.031 (R) [notice] Looking for db archive: file name: backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-db.gz
+0000.032 (R) [notice] Archive is expected to be size: 213.2 KB: OK
+0000.037 (R) [notice] Looking for plugins archive: file name: backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-plugins.zip
+0000.037 (R) [notice] Archive is expected to be size: 14312.7 KB: OK
+0000.040 (R) [notice] Looking for themes archive: file name: backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-themes.zip
+0000.040 (R) [notice] Archive is expected to be size: 31538 KB: OK
+0000.044 (R) [notice] Looking for uploads archive: file name: backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-uploads.zip
+0000.044 (R) [notice] Archive is expected to be size: 11636.3 KB: OK
+0000.047 (R) [notice] Looking for others archive: file name: backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-others.zip
+0000.048 (R) [notice] Archive is expected to be size: 3.5 KB: OK
+0000.057 (R) [notice] Unpacking backup... (backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-db.gz, 0.2 Mb)
+0000.067 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.083 (R) [notice] Enabling Maintenance mode&#8230;
+0000.086 (R) [notice] Backup of: http://frieda-garcia-park.dev/wp
+0000.087 (R) [notice] Site home: http://frieda-garcia-park.dev
+0000.087 (R) [notice] Content URL: http://frieda-garcia-park.dev/app
+0000.087 (R) [notice] Uploads URL: http://frieda-garcia-park.dev/app/uploads
+0000.087 (R) [notice] Old table prefix: wp_
+0000.087 (R) [notice] Site information: multisite = 0
+0000.088 (R) [notice] New table prefix: wp_
+0000.095 (R) [notice] Processing table (InnoDB):  wp_options
+0000.173 (R) [notice] Processing table (InnoDB):  wp_users
+0000.186 (R) [notice] Processing table (InnoDB):  wp_usermeta
+0000.197 (R) [notice] Processing table (InnoDB):  wp_commentmeta
+0000.212 (R) [notice] Processing table (InnoDB):  wp_comments
+0000.226 (R) [notice] Processing table (InnoDB):  wp_links
+0000.234 (R) [notice] Processing table (InnoDB):  wp_postmeta
+0000.305 (R) [notice] Processing table (InnoDB):  wp_posts
+0000.326 (R) [notice] Processing table (InnoDB):  wp_term_relationships
+0000.337 (R) [notice] Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0000.337 (R) [notice] Processing table (InnoDB):  wp_term_taxonomy
+0000.349 (R) [notice] Processing table (InnoDB):  wp_termmeta
+0000.358 (R) [notice] Processing table (InnoDB):  wp_terms
+0000.365 (R) [notice] Processing table (InnoDB):  wp_alm
+0000.371 (R) [notice] Disabling Maintenance mode&#8230;
+0000.371 (R) [notice] Finished: lines processed: 46 in 0.30 seconds
+0000.372 (R) [notice] Cleaning up rubbish...
+0000.373 (R) [notice] Nothing to do: the site URL is already: http://frieda-garcia-park.dev/wp
+0000.420 (R) [notice] Unpacking backup... (backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-plugins.zip, 14 Mb)
+0008.426 (R) [notice] Moving old data out of the way...
+0010.841 (R) [notice] Moving unpacked backup into place...
+0013.260 (R) [notice] Cleaning up rubbish...
+0013.266 (R) [notice] Unpacking backup... (backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-themes.zip, 30.8 Mb)
+0055.120 (R) [notice] Moving old data out of the way...
+0066.941 (R) [notice] Moving unpacked backup into place...
+0077.161 (R) [notice] Cleaning up rubbish...
+0077.167 (R) [notice] Unpacking backup... (backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-uploads.zip, 11.4 Mb)
+0077.811 (R) [notice] Moving old data out of the way...
+0077.817 (R) [notice] Moving unpacked backup into place...
+0077.862 (R) [notice] Cleaning up rubbish...
+0077.870 (R) [notice] Unpacking backup... (backup_2017-06-21-1430_Friends_of_Frieda_Garcia_Park_f2b829a9c038-others.zip, 0 Mb)
+0077.906 (R) [notice] Cleaning up rubbish...
+0077.936 (R) [notice] Restore successful!

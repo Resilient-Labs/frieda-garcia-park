@@ -443,3 +443,7 @@
 0121.647 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
 0121.652 (0) No email will/can be sent - the user has not configured an email address.
 0121.653 (0) The backup apparently succeeded and is now complete. To complete your migration/clone, you should now log in to the remote site and restore the backup set.
+0000.000 (1) Opened log file at time: Mon, 31 Jul 2017 19:45:01 +0000 on http://frieda-garcia-park.dev/wp
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.13.1.1 WP: 4.6.1 PHP: 7.0.21-1~ubuntu16.04.1+deb.sury.org+1 (cli, Linux frieda-garcia-park 4.4.0-66-generic #87-Ubuntu SMP Fri Mar 3 15:29:05 UTC 2017 x86_64) MySQL: 5.5.5 WPLANG: en_US Server:  safe_mode: 0 max_execution_time: 900 memory_limit: -1 (used: 24.3M | 26M) multisite: N openssl: OpenSSL 1.1.0f  25 May 2017 mcrypt: Y LANG: en_US.UTF-8 ZipArchive::addFile: Y
+0000.003 (1) Free space on disk containing Updraft's temporary directory: 132227.8 MB
+0000.003 (1) This backup task (f2b829a9c038) is either complete or began over 2 days ago: ending (1501530301.8116, ) (existing jobdata keys: )
