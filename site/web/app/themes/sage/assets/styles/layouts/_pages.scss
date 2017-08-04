@@ -219,6 +219,19 @@ section.container-about:nth-of-type(2n+1) aside {
 /*-----------------------------------
 # Media Queries [thank god for @import...]
 ------------------------------------*/
+#tribe-bar-form{
+	background: linear-gradient(90deg,#80caa5,#aadff1);
+  color: $white;
+}
+#tribe-bar-form label{
+  color: $white;
+}
+#tribe-bar-form .tribe-bar-submit input[type=submit]{
+	background: $pink;
+}
+/*-----------------------------------
+# Media Queries [thank god for @import...]
+------------------------------------*/
 @import 'media-about';
 @import 'media-p-h';
 @import 'media-host';
