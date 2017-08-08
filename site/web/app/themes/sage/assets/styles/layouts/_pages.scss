@@ -217,8 +217,11 @@ section.container-about:nth-of-type(2n+1) aside {
   width: 50%;
 }
 /*-----------------------------------
-# Media Queries [thank god for @import...]
+# Calendar/Events Page
 ------------------------------------*/
+#tribe-bar-form #tribe-bar-views + .tribe-bar-filters{
+	padding: 0 15px;
+}
 #tribe-bar-form{
 	background: linear-gradient(90deg,#80caa5,#aadff1);
   color: $white;
@@ -226,8 +229,70 @@ section.container-about:nth-of-type(2n+1) aside {
 #tribe-bar-form label{
   color: $white;
 }
+#tribe-bar-form input[type='text']{
+  border-bottom: 1px solid $white;
+  color: white;
+}
+#tribe-bar-form input[type='text']:focus{
+  outline: 1px solid $white;
+}
 #tribe-bar-form .tribe-bar-submit input[type=submit]{
 	background: $pink;
+}
+#tribe-bar-form .tribe-bar-views-inner label{
+  padding: 0;
+}
+#tribe-bar-views .tribe-bar-views-list{
+  padding: 0;
+}
+.tribe-bar-views-inner{
+	background: none;
+	padding: 16px 0 45px 0;
+}
+#tribe-events-content{
+  padding: 0 30px;
+}
+.tribe-events-notices{
+	background: none;
+	border: none;
+  color: $dark-grey;
+  font-style: italic;
+  text-align: center;
+}
+.tribe-events-calendar thead,
+.tribe-events-calendar tbody {
+  background: linear-gradient(90deg,#80caa5,#aadff1);
+  color: $white;
+  font-weight: bold;
+}
+.tribe-events-calendar thead th{
+  background: none;
+  border: none;
+}
+.tribe-events-calendar div[id*='tribe-events-daynum-'],
+.tribe-events-calendar div[id*='tribe-events-daynum-'] a,
+.tribe-events-calendar td.tribe-events-past div[id*='tribe-events-daynum-'],
+.tribe-events-calendar td.tribe-events-past div[id*='tribe-events-daynum-'] > a{
+  background: none;
+  color: $dark-grey;
+  font-size: $f-size;
+}
+.tribe-events-calendar td.tribe-events-present div[id*='tribe-events-daynum-'],
+.tribe-events-calendar td.tribe-events-present div[id*='tribe-events-daynum-'] > a,
+#tribe_events_filters_wrapper input[type=submit],
+.tribe-events-button,
+#tribe-events .tribe-events-button,
+.tribe-events-button.tribe-inactive,
+#tribe-events .tribe-events-button:hover,
+.tribe-events-button:hover,
+.tribe-events-button.tribe-active:hover{
+  background: $pink;
+}
+#tribe-events-content .tribe-events-calendar td{
+  background: $white;
+}
+#tribe-events-content .tribe-events-calendar div[id*='tribe-events-event-'] h3.tribe-events-month-event-title{
+  font-size: $h-size;
 }
 /*-----------------------------------
 # Media Queries [thank god for @import...]
@@ -235,3 +300,4 @@ section.container-about:nth-of-type(2n+1) aside {
 @import 'media-about';
 @import 'media-p-h';
 @import 'media-host';
+@import 'media-calendar';
