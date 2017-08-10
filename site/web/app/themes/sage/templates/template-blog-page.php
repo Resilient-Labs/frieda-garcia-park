@@ -1,27 +1,45 @@
 <?php
 /**
- * Template Name: Blog Template
- */
+* Template Name: Blog Template
+*/
+// Helpful links for pagination:
+// http://callmenick.com/post/custom-wordpress-loop-with-pagination
+// https://roots.io/upping-php-requirements-in-your-wordpress-themes-and-plugins/
 ?>
 
-<?php
-// the query
-$blog_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>-1, )); ?>
 <section class="blog-page">
+    <section class="blog-page-posts">
+      <?php
 
-<?php if ( $blog_query->have_posts()) : ?>
-<section class="blog-page-posts">
+  $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+
+  $custom_args = array(
+      'post_type' => 'post',
+      'posts_per_page' => 4,
+      'paged' => $paged
+    );
+
+  $custom_query = new WP_Query( $custom_args ); ?>
+
+  <?php if ( $custom_query->have_posts() ) : ?>
+
     <!-- the loop -->
-    <?php while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
-      <?php get_template_part('templates/content-blog', get_post_type());?>
+    <?php while ( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
+        <?php get_template_part('templates/content-blog', get_post_type() ); ?>
     <?php endwhile; ?>
     <!-- end of the loop -->
-</section>
-    <?php wp_reset_postdata(); ?>
 
-<?php else : ?>
-    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
+    <!-- pagination here -->
+    <?php
+      // if (function_exists(Roots\Sage\Extras\custom_pagination)) {
+        Roots\Sage\Extras\custom_pagination($custom_query->max_num_pages,"",$paged);
+      // }
+    endif;
+    ?>
+
+  <?php wp_reset_postdata(); ?>
+  </section>
+
 <aside class="blog-sidebar">
   <strong>Stay Connected</strong>
   <?php get_template_part('templates/sidebar-social');?>
