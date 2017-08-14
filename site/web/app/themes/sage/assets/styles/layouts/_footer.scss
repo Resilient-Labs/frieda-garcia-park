@@ -219,6 +219,9 @@ footer .fa{
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
+  footer {
+      padding: 15px 30px;
+  }
   footer section{
     width: 100%;
     height: auto;

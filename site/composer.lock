@@ -530,15 +530,15 @@
         },
         {
             "name": "wpackagist-plugin/envira-gallery-lite",
-            "version": "1.6.1.5",
+            "version": "1.6.1.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/envira-gallery-lite/",
-                "reference": "tags/1.6.1.5"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/envira-gallery-lite.1.6.1.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/envira-gallery-lite.zip?timestamp=1502295149",
                 "reference": null,
                 "shasum": null
             },
@@ -610,16 +610,16 @@
         },
         {
             "name": "wpackagist-plugin/the-events-calendar",
-            "version": "4.5.9",
+            "version": "4.5.10",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/the-events-calendar/",
-                "reference": "tags/4.5.9"
+                "reference": "tags/4.5.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/the-events-calendar.4.5.9.zip",
-                "reference": "tags/4.5.9",
+                "url": "https://downloads.wordpress.org/plugin/the-events-calendar.4.5.10.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {

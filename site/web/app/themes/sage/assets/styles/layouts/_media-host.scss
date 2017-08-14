@@ -29,12 +29,11 @@
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
-  .row {
-    padding: 15px;
+  .home.row {
+    padding: 30px;
   }
-  .row .content, .row .media {
-    padding: 15px;
-    width: calc(100% - 15px);
+  .row {
+    padding: 0;
   }
   .row .host-event-card {
     width: 100%;

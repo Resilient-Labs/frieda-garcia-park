@@ -219,6 +219,9 @@ section.container-about:nth-of-type(2n+1) aside {
 /*-----------------------------------
 # Calendar Page
 ------------------------------------*/
+div#tribe-events {
+    padding: 45px;
+}
 #tribe-bar-form #tribe-bar-views + .tribe-bar-filters{
 	padding: 0 15px;
 }
@@ -248,9 +251,6 @@ section.container-about:nth-of-type(2n+1) aside {
 .tribe-bar-views-inner{
 	background: none;
 	padding: 16px 0 45px 0;
-}
-#tribe-events-content{
-  padding: 0 30px;
 }
 .tribe-events-notices{
 	background: none;
@@ -304,10 +304,29 @@ section.container-about:nth-of-type(2n+1) aside {
 # Gallery Page
 ------------------------------------*/
 .gallery h1{
-  margin-left: 30px;
+  padding-left: 45px;
 }
 .envira-gallery-item{
   padding: inherit 8px 15px 8px;
+}
+.envira-gallery-wrap {
+    padding: 0 45px!important;
+}
+@media only screen and (max-width: 768px) {
+  .gallery h1{
+    padding-left: 30px;
+  }
+  .envira-gallery-wrap {
+      padding: 0 30px!important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .gallery h1{
+    padding-left: 15px;
+  }
+  .envira-gallery-wrap {
+      padding: 0 15px!important;
+  }
 }
 /*-----------------------------------
 # Media Queries [thank god for @import...]
