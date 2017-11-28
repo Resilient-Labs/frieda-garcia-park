@@ -10,15 +10,34 @@ footer{
   padding: 15px 45px;
   flex-flow: row wrap;
   justify-content: center;
-}
-footer section{
-  float: left;
-  margin: 0 auto;
-  padding: 15px;
-  width: 33%;
-}
-footer section p{
-  font-size: 1.15rem;
+  .footer-row {
+    max-width: 1024px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  section{
+    padding: 10px;
+    width: 33%;
+    p {
+      font-size: 1.15rem;
+    }
+    ul{
+      list-style-type: none;
+    }
+    li{
+      color: $white;
+      font-size: 1.15rem;
+    }
+  }
+  .footer-footnote {
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .social {
+    display: inline-flex;
+  }
 }
 footer section a button{
   background: $white;
@@ -31,24 +50,9 @@ footer section a button{
 footer section a button:hover{
   color: $pink;
 }
-footer section ul{
-  list-style-type: none;
-}
-footer section ul li{
-  color: $white;
-  font-size: 1.15rem;
-}
-footer section:last-of-type{
-  width: 100%;
-}
 footer small{
+  text-align: left;
   display: block;
-  float: left;
-  width: 50%;
-}
-footer .social{
-  display: block;
-  text-align: right;
   width: 100%;
 }
 footer .fa{
@@ -67,8 +71,6 @@ footer .fa{
     width: 100%;
   }
   footer section small{
-    display: inline-block;
-    float: left;
     font-size: .8rem;
     text-align: left;
     width: 50%;
