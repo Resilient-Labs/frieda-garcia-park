@@ -13,9 +13,9 @@
   <section class="clearfix">
     <h2>Visit the Park:</h2>
         <p>38 Stanhope Street<br>
-        Boston, Massachussetts 02116<br>
+        Boston, MA 02116<br>
         281-330-8004<br>
-        contactme@gmail.com</p>
+        <a href="mailto:clerk@friedagarciapark.com">clerk@friedagarciapark.com</a></p>
   </section>
   <section class="clearfix">
     <h2>Site Map</h2>
@@ -24,7 +24,7 @@
     </nav>
   </section>
   <section class="clearfix">
-    <small>Friends of Frieda Garcia Park &copy; 2017. All Rights Reserved.
+    <small>&copy; <?php echo date("Y"); ?> <?php echo bloginfo($show = 'name'); ?>. All Rights Reserved.
       Designed by <a href="http://www.muigaiunaka.com" target="_blank">Muigai Unaka</a>.
       Built by a <a href="http://www.resilientcoders.org" target="_blank">Resilient Coder</a>.
     </small>
@@ -32,10 +32,7 @@
       <a href="https://www.facebook.com/friendsoffriedagarciapark/" target="_blank">
         <i class="fa fa-facebook fa-2x fLogo" aria-hidden="true"></i>
       </a>
-      <a href="#">
-        <i class="fa fa-twitter fa-2x tLogo" aria-hidden="true"></i>
-      </a>
-      <a href="#">
+      <a href="https://www.instagram.com/frieda_garcia_park/">
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
       </a>
     </section>
