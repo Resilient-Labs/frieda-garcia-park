@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <!-- Removed "wrap container" to fix padding shit -->
+    <!-- Removed "wrap container" to fix padding stuff -->
     <div role="document">
     <!--  <div class="content row"> -->
         <main>
