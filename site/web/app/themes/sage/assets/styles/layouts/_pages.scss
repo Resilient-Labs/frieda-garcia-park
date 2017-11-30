@@ -63,18 +63,6 @@ section.container-about:nth-of-type(2n+1) aside {
 /*-----------------------------------
 # Page Template: Host Event
 ------------------------------------*/
-
-.row .media figure img {
-  left: 15px;
-  top: -15px;
-  width: 100%;
-}
-.row .media figure.media-bg {
-  background: $sea-green;
-}
-.row:last-of-type>h2{
-  margin-left: 15px;
-}
 .row .host-event-card {
   float: left;
   height: 100%;
@@ -102,8 +90,6 @@ section.container-about:nth-of-type(2n+1) aside {
 /*-----------------------------------
 Home Page
 ------------------------------------*/
-@import "./../components/home-banner";
-@import "./../components/generic-row";
 /*-----------------------------------
 # Calendar Page
 ------------------------------------*/
@@ -220,6 +206,5 @@ div#tribe-events {
 # Media Queries [thank god for @import...]
 ------------------------------------*/
 @import 'media-about';
-@import 'media-p-h';
 @import 'media-host';
 @import 'media-calendar';

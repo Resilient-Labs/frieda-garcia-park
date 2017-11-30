@@ -29,11 +29,11 @@
     width: 100%;
     top: 0;
   }
-  .home.row .content {
+  .generic-row .generic-row-content-wrapper {
     padding: 0;
     width: 100%;
   }
-  .home.row .media {
+  .generic-row .generic-row-media-wrapper {
     width: 100%;
   }
 }
@@ -50,14 +50,14 @@
     top: 0;
     width: 100%;
   }
-  .home.row .content {
+  .generic-row .generic-row-content-wrapper {
     padding: 0;
     width: 100%;
   }
-  .home.row .media {
+  .generic-row .generic-row-media-wrapper {
     width: 100%;
   }
-  .home.row .content a {
+  .generic-row .generic-row-content-wrapper .cta {
     width: 100%;
   }
 }
