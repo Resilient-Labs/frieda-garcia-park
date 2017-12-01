@@ -1,19 +1,26 @@
 .hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0, 1));
   height: 480px;
   overflow: hidden;
   padding: 0;
   width: 100%;
   img {
-    display: flex;
+    position: absolute;
     justify-content: center;
     align-items: center;
     opacity: .3;
     width: 100%;
   }
-  p{
-      line-height: 1.4;
-      color: $white;
+  h3{
+    width: 100%;
+    background: rgba(128,202,165,.5);
+    padding: 60px;
+    align-self: flex-end;
+    line-height: 1.4;
+    color: $white;
     }
 }
 @import 'media-p-h';
