@@ -1,6 +1,8 @@
 .generic-card {
-    padding: 15px;
-    width: 25%;
+  display: block;
+    margin: 15px;
+    width: calc(25% - 15px);
+    flex-flow: row wrap;
     figure {
       background: rgba(246,165,170,1);
       margin: auto;
