@@ -6,6 +6,9 @@
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
+  .generic-row-media-wrapper{
+    background: $sea-green;
+  }
   &:first-of-type{
     margin-top: 60px;
   }
