@@ -3,18 +3,16 @@
  * Template Name: Host Event Template
  */
 ?>
-  <section class="row">
+  <section class="generic-row">
     <section class="content">
       <h2><?php echo get_field('host-event-title'); ?></h2>
       <?php echo get_field('host-event-body');?>
     </section>
-    <section class="media">
-      <figure class="media-bg">
+      <figure class="generic-row-media">
         <img src="<?php echo get_field('host-event-image');?>">
       </figure>
-    </section>
   </section>
-  <section class="row">
+  <section class="generic-row">
     <h2><?php echo get_field('rules-title'); ?></h2>
     <section class="host-event-card">
       <figure>

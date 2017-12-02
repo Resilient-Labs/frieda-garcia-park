@@ -1,6 +1,32 @@
 /*-----------------------------------
 # Blog Page
 ------------------------------------*/
+section.blog-page {
+  .custom-pagination {
+    display: block;
+    float: left;
+    padding: 30px;
+    position: relative;
+  }
+}
+a.page-numbers:not(.next),
+span.page-numbers.current{
+    padding: 5px 15px;
+    background: $pink;
+    color: $white;
+}
+a.prev.page-numbers{
+    background: none;
+    color: $dark-grey;
+    padding: 15px;
+}
+a.next.page-numbers{
+  padding: 15px;
+}
+span.page-numbers.current{
+  background: $dark-grey;
+  color: $white;
+}
 section.blog-page-posts{
   display: inline-block;
   width: calc(70% - 15px);
