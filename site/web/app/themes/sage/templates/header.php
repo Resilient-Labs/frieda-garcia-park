@@ -1,17 +1,26 @@
-<header class="clearfix">
+<!-- <header class="clearfix">
   <nav class="clearfix">
+    <?php wp_nav_menu(); ?>
+  </nav>
+</header> -->
+<header class="clearfix">
+  <nav>
     <a href="<?php echo home_url();?>" class="logo">
       <img src="<?php bloginfo('template_directory');?>/assets/images/logo.png" alt="ffgp-logo"/>
     </a>
-    <?php wp_nav_menu(); ?>
+    <?php wp_nav_menu(array(
+	     'menu' => 'Dropdown Menu',
+	     'container_id' => 'cssmenu',
+	     'walker' => new CSS_Menu_Walker()
+     )); ?>
     <div class="hamburger-menu">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div>
+    <div class="hamburger-nav">
+      <?php wp_nav_menu(); ?>
+    </div>
   </nav>
-  <div class="hamburger-nav">
-    <?php wp_nav_menu(); ?>
-  </div>
 </header>
