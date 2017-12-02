@@ -1,0 +1,77 @@
+#cssmenu {
+}
+#cssmenu,
+#cssmenu > ul > li > ul > li a:hover {
+	background: #3c3c3c;
+	background: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+}
+#cssmenu > ul {
+}
+#cssmenu > ul > li {
+	float: left;
+	display: block;
+	position: relative;
+}
+#cssmenu > ul > li > a {
+	outline: none;
+	display: block;
+	position: relative;
+}
+#cssmenu > ul > li > a:hover {
+}
+#cssmenu > ul > li:first-child > a {
+	border-radius: 5px 0 0 5px;
+}
+#cssmenu > ul > li > a:after {
+	content: '';
+	position: absolute;
+	z-index: 99;
+}
+#cssmenu ul li.has-sub:hover > a:after {
+	top: 0;
+	bottom: 0;
+}
+#cssmenu > ul > li.has-sub > a:before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	right: 6px;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+	top: 19px;
+}
+#cssmenu ul li.has-sub:hover > a {
+	top: -1px;
+	z-index: 999;
+}
+#cssmenu ul li.has-sub:hover > ul,
+#cssmenu ul li.has-sub:hover > div {
+	display: block;
+}
+#cssmenu ul li.has-sub > a:hover {
+
+}
+#cssmenu ul li > ul,
+#cssmenu ul li > div {
+	display: none;
+	width: auto;
+	position: absolute;
+	top: 38px;
+	padding: 10px 0;
+	z-index: 999;
+}
+#cssmenu ul li > ul {
+	width: 200px;
+}
+#cssmenu ul li > ul li {
+	display: block;
+	position: relative;
+}
+#cssmenu ul li > ul li a {
+	display: block;
+	position: relative;
+}
+#cssmenu ul ul a:hover {
+}
+#cssmenu > ul > li.has-sub > a:hover:before {
+}
