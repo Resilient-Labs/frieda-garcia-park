@@ -1,8 +1,3 @@
-<!-- <header class="clearfix">
-  <nav class="clearfix">
-    <?php wp_nav_menu(); ?>
-  </nav>
-</header> -->
 <header class="clearfix">
   <nav>
     <a href="<?php echo home_url();?>" class="logo">
