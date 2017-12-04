@@ -72,11 +72,10 @@ header nav .hamburger-menu, header .hamburger-nav {
     width: 36px;
   }
   header .hamburger-nav {
-    transition: none;
+    justify-content: center;
+    align-items: baseline;
     height: calc(100vh - 115px);
     width: 100%;
-    align-items: center;
-    margin: 0 auto;
   }
   header .hamburger-nav ul{
     height: 100%;
