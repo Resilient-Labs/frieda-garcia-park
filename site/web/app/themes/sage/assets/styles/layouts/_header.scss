@@ -2,17 +2,21 @@ header{
   padding: 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
+  justify-content: space-between;
   background: linear-gradient(to right, $sea-green, $baby-blue);
 }
 header nav{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   max-width: 1024px;
 }
 header a img{
   height: 100px;
+}
+header a:hover{
+  transition: none;
 }
 header nav ul li {
   display: flex;
@@ -28,6 +32,9 @@ header nav ul li {
 header nav .hamburger-menu, header .hamburger-nav {
   display: none;
 }
+.hidden-overflow{
+  overflow: hidden;
+}
 @import "../components/dropdown-menu.scss";
 /*-----------------------------------
 ## Desktops, Medium Devices
@@ -39,24 +46,44 @@ header nav .hamburger-menu, header .hamburger-nav {
 ## Tablets, Small Devices
 ------------------------------------*/
 @media only screen and (max-width : 768px)  {
+  header{
+    display: block;
+    padding: 15px 20px;
+  }
+  header nav{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  header nav ul{
+    display: block;
+    float: right;
+    clear: none;
+  }
+  header nav ul li{
+    font-size: $f-size;
+    display: block;
+  }
+  header nav ul li a{
+    color: white;
+    text-decoration: none;
+  }
   header nav .hamburger-menu {
     display: inline-block;
-    float: right;
-    position: absolute;
-    right: 0;
-    top: 25%;
     width: 36px;
   }
   header .hamburger-nav {
+    transition: none;
     height: calc(100vh - 115px);
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
   }
   header .hamburger-nav ul{
     height: 100%;
   }
   header .hamburger-nav ul li {
     color: $white;
-    font-size: 2.5em;
-    height: 25%;
+    font-size: 2.5rem;
     text-align: center;
   }
   header nav .hamburger-menu span{
@@ -72,11 +99,8 @@ header nav .hamburger-menu, header .hamburger-nav {
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
-  header>img{
-    display: none;
-  }
   .list{
-    display: none;
+
   }
   header nav{
     width: 100%;
@@ -91,6 +115,7 @@ header nav .hamburger-menu, header .hamburger-nav {
   }
   header nav ul li{
     width: 100%;
+    display: block;
     padding: 10px;
   }
   header nav ul li a{

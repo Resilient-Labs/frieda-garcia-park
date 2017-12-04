@@ -15,7 +15,9 @@
       <span></span>
     </div>
     <div class="hamburger-nav">
-      <?php wp_nav_menu(); ?>
+      <?php wp_nav_menu(array(
+        'menu' => 'Mobile Menu'
+      )); ?>
     </div>
   </nav>
 </header>

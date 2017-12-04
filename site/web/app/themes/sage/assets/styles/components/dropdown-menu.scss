@@ -1,18 +1,43 @@
 #cssmenu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
+	align-items: center;
+	display: flex;
+	justify-content: center;
 }
-#cssmenu > ul{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#cssmenu,
+#cssmenu > ul > li > ul > li a:hover {
+	color: $pink;
+}
+#cssmenu > ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#cssmenu > ul > li {
+	float: left;
+	display: block;
+	position: relative;
+}
+#cssmenu > ul > li > a {
+	outline: none;
+	display: block;
+	position: relative;
+}
+#cssmenu > ul > li > a:hover {
+	color: $pink;
+}
+#cssmenu > ul > li:first-child > a {
 }
 #cssmenu > ul > li > a:after {
 	content: '';
 	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	right: -2px;
 	z-index: 99;
+}
+#cssmenu ul li.has-sub:hover > a:after {
+	top: 0;
+	bottom: 0;
 }
 #cssmenu > ul > li.has-sub > a:before {
 	content: '';
@@ -24,18 +49,22 @@
 	top: 19px;
 }
 #cssmenu ul li.has-sub:hover > a {
+	padding-bottom: 13px;
+	padding-top: 13px;
+	top: -1px;
 	z-index: 999;
 }
 #cssmenu ul li.has-sub:hover > ul,
 #cssmenu ul li.has-sub:hover > div {
+	display: block;
 }
 #cssmenu ul li.has-sub > a:hover {
-
 }
 #cssmenu ul li > ul,
 #cssmenu ul li > div {
 	display: none;
 	width: auto;
+	background: $white;
 	position: absolute;
 	top: 38px;
 	padding: 10px 0;
@@ -45,10 +74,27 @@
 	width: 200px;
 }
 #cssmenu ul li > ul li {
+	display: block;
+	list-style: inside none;
+	padding: 0;
+	margin: 0;
 	position: relative;
 }
 #cssmenu ul li > ul li a {
+	display: block;
 	position: relative;
+	margin: 0;
+	padding: 7.5px 15px;
+	color: $sea-green;
+}
+#cssmenu ul ul a:hover {
+	color: #ffffff;
 }
 #cssmenu > ul > li.has-sub > a:hover:before {
+	border-top: 1px solid grey;
+}
+@media only screen and (max-width: 768px) {
+	#cssmenu{
+		display: none;
+	}
 }
