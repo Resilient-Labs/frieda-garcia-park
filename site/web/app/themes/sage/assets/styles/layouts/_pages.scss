@@ -60,50 +60,36 @@ section.container-about:nth-of-type(2n) aside {
 section.container-about:nth-of-type(2n+1) aside {
   left: 30px;
 }
-/*-----------------------------------
-# Page Template: Host Event
-------------------------------------*/
-
-.row .media figure img {
-  left: 15px;
-  top: -15px;
-  width: 100%;
-}
-.row .media figure.media-bg {
-  background: $sea-green;
-}
-.row:last-of-type>h2{
-  margin-left: 15px;
-}
-.row .host-event-card {
-  float: left;
-  height: 100%;
-  padding: 15px;
-  width: 25%;
-}
-.row .host-event-card figure {
-  background: rgba(246,165,170,1);
-  margin: auto;
-  padding: 30px 0;
-  text-align: center;
-  width: 100%;
-}
-.row .host-event-card figure img {
-  text-align: center;
-  width: 50%;
-}
-.row .host-event-card div {
-  border: 1px solid $pink;
-  margin: 0;
-  padding: 15px;
-  min-height: 120px;
-  width: 100%;
-}
+// /*-----------------------------------
+// # Page Template: Host Event
+// ------------------------------------*/
+// .row .host-event-card {
+//   float: left;
+//   height: 100%;
+//   padding: 15px;
+//   width: 25%;
+// }
+// .row .host-event-card figure {
+//   background: rgba(246,165,170,1);
+//   margin: auto;
+//   padding: 30px 0;
+//   text-align: center;
+//   width: 100%;
+// }
+// .row .host-event-card figure img {
+//   text-align: center;
+//   width: 50%;
+// }
+// .row .host-event-card div {
+//   border: 1px solid $pink;
+//   margin: 0;
+//   padding: 15px;
+//   min-height: 120px;
+//   width: 100%;
+// }
 /*-----------------------------------
 Home Page
 ------------------------------------*/
-@import "./../components/hero-banner";
-@import "./../components/generic-row";
 /*-----------------------------------
 # Calendar Page
 ------------------------------------*/
@@ -220,6 +206,5 @@ div#tribe-events {
 # Media Queries [thank god for @import...]
 ------------------------------------*/
 @import 'media-about';
-@import 'media-p-h';
 @import 'media-host';
 @import 'media-calendar';
