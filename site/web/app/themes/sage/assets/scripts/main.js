@@ -76,6 +76,6 @@
 
 })(jQuery); // Fully reference jQuery after this point.
 jQuery(".hamburger-menu").on('click',function() {
-  jQuery(".hamburger-nav").toggle("slow");
+  jQuery(".hamburger-nav").toggle("slow").css('display','flex');
   jQuery("html, body").toggleClass("hidden-overflow");
 });

@@ -1,90 +1,58 @@
 header{
-  display: block;
-  padding: 15px 30px;
-  background: linear-gradient(to right, rgba(128,202,165,1), rgba(170,223,241,1));
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, $sea-green, $baby-blue);
 }
-header nav .logo {
-  display: inline-block;
-  float: left;
-}
-header nav .menu-menu-1-container {
-  display: inline-block;
-  float: right;
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
 }
 header a img{
-  display: block;
   height: 100px;
-  float: left;
 }
-header nav ul{
-  margin: 0;
+header a:hover{
+  transition: none;
 }
 header nav ul li {
-  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   color: $white;
   font-family: $rob-sec;
   font-size: $f-size;
-  margin: 30px;
   font-weight: bold;
-  text-align: right;
-}
-header nav div .menu {
-
+  margin: 15px;
 }
 header nav .hamburger-menu, header .hamburger-nav {
   display: none;
 }
-.hidden-overflow {
+.hidden-overflow{
   overflow: hidden;
 }
-/*-----------------------------------
-# Media Queries
-------------------------------------*/
-/*-----------------------------------
-## Wide Screens, Large Devices
-------------------------------------*/
-@media only screen and (max-width : 1200px) {
-  header nav ul li{
-    font-size: $f-size;
-  }
-  header nav ul li a{
-    color: $white;
-    text-decoration: none;
-  }
-}
+@import "../components/dropdown-menu.scss";
 /*-----------------------------------
 ## Desktops, Medium Devices
 ------------------------------------*/
 @media only screen and (max-width : 992px)  {
-  header a img {
-    height: 80px;
-  }
-  header nav ul{
-    float: left;
-  }
-  header nav ul li{
-    display: block;
-    font-size: $f-size;
-    margin: 25px 15px;
-  }
-  header nav ul li a{
-    display: block;
-    color: $white;
-    text-decoration: none;
-  }
+
 }
 /*-----------------------------------
 ## Tablets, Small Devices
 ------------------------------------*/
 @media only screen and (max-width : 768px)  {
   header{
+    display: block;
     padding: 15px 20px;
   }
-  header>img{
-    display: block;
-    margin: 0 auto;
-    float: none;
-    height: 100px;
+  header nav{
+    display: flex;
+    flex-flow: row wrap;
   }
   header nav ul{
     display: block;
@@ -99,27 +67,22 @@ header nav .hamburger-menu, header .hamburger-nav {
     color: white;
     text-decoration: none;
   }
-  header nav div .menu {
-    display: none;
-  }
   header nav .hamburger-menu {
     display: inline-block;
-    float: right;
-    position: absolute;
-    right: 0;
-    top: 25%;
     width: 36px;
   }
   header .hamburger-nav {
+    justify-content: center;
+    align-items: baseline;
     height: calc(100vh - 115px);
+    width: 100%;
   }
   header .hamburger-nav ul{
     height: 100%;
   }
   header .hamburger-nav ul li {
     color: $white;
-    font-size: 2.5em;
-    height: 25%;
+    font-size: 2.5rem;
     text-align: center;
   }
   header nav .hamburger-menu span{
@@ -135,11 +98,8 @@ header nav .hamburger-menu, header .hamburger-nav {
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
-  header>img{
-    display: none;
-  }
   .list{
-    display: none;
+
   }
   header nav{
     width: 100%;
