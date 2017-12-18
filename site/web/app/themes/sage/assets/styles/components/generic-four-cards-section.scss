@@ -4,7 +4,7 @@
   align-items: flex-start;
   width: 100%;
   flex-flow: row wrap;
-  max-width: 1024px;
+  max-width: $max-container-width;
   margin: 0 auto;
 }
 /*-----------------------------------

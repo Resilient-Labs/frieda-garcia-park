@@ -90,7 +90,8 @@ function display_sidebar() {
     is_page_template('templates/template-about.php'),
     is_page_template('templates/template-home.php')
   ]);
-  return apply_filters('sage/display_sidebar', $display);
+  // return apply_filters('sage/display_sidebar', $display);
+  return false;
 }
 
 /**

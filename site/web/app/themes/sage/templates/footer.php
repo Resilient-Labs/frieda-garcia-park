@@ -15,7 +15,6 @@
     <h2>Visit the Park:</h2>
         <p>38 Stanhope Street<br>
         Boston, MA 02116<br>
-        281-330-8004<br>
         <a href="mailto:clerk@friedagarciapark.com">clerk@friedagarciapark.com</a></p>
   </section>
   <section>
@@ -27,7 +26,7 @@
   <section class="footer-footnote">
     <small>&copy; <?php echo date("Y"); ?> <?php echo bloginfo($show = 'name'); ?>. All Rights Reserved.
       Designed by <a href="http://www.muigaiunaka.com" target="_blank">Muigai Unaka</a>.
-      Built by a <a href="http://www.resilientcoders.org" target="_blank">Resilient Coder</a>.
+      Built by <a href="http://www.resilientcoders.org" target="_blank">Resilient Coders</a>.
     </small>
     <div class="social">
       <a href="https://www.facebook.com/friendsoffriedagarciapark/" target="_blank">
