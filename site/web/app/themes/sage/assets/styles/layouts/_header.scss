@@ -10,10 +10,10 @@ header nav{
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1024px;
+  max-width: $max-container-width;
 }
 header a img{
-  height: 100px;
+  height: 80px;
 }
 header a:hover{
   transition: none;
@@ -48,7 +48,7 @@ header nav .hamburger-menu, header .hamburger-nav {
 @media only screen and (max-width : 768px)  {
   header{
     display: block;
-    padding: 15px 20px;
+    padding: 15px 30px;
   }
   header nav{
     display: flex;

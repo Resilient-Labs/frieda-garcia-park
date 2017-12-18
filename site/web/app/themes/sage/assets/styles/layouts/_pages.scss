@@ -1,3 +1,9 @@
+.generic-title {
+  max-width: $max-container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /*-----------------------------------
 # Page Template: About
 ------------------------------------*/
@@ -5,7 +11,7 @@ section.container-about {
   border: 1px solid #80caa5;
   position: relative;
   margin: 76px auto 0 auto;
-  max-width: 1366px;
+  max-width: $max-container-width;
   width: calc(100% - 60px);
   padding: 0 45px;
 }

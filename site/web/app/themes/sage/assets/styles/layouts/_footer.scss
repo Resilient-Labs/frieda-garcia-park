@@ -11,7 +11,7 @@ footer{
   flex-flow: row wrap;
   justify-content: center;
   .footer-row {
-    max-width: 1024px;
+    max-width: $max-container-width;
     display: flex;
     flex-flow: row wrap;
   }
