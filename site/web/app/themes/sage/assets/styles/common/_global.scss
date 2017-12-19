@@ -21,8 +21,8 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 /*-----------------------------------
 # Resets & Standardize
 ------------------------------------*/
@@ -40,15 +40,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-size: 16px;
-  line-height: 1.1em;
-}
 body {
   margin: 0 auto;
-  font-size: $f-size;
-  font-family: $rob-sec;
-  font-weight: 300;
 }
 blockquote {
   margin: $f-size * 4 0 $f-size * 1.5 0;
@@ -68,12 +61,9 @@ a:hover{
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
 }
-h1,h2,h3,h4,h5,h6 {
-  margin: 1.5rem 0;
-  font-family: $rob-prime;
-  font-size: $h-size;
-  text-transform: capitalize;
-}
 ul {
   list-style-type: none;
+}
+button , .btn {
+  padding: 15px 30px;
 }

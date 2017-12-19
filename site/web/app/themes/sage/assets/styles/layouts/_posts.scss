@@ -97,7 +97,7 @@ section.blog-page-posts{
   .single-blog-post-content>article {
     border: 1px solid $pink;
     margin: 0 auto;
-    max-width: 1366px;
+    max-width: $max-container-width;
     width: calc(100% - 60px);
     padding: 30px;
     text-align: left;
